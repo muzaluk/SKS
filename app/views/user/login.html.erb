@@ -1,0 +1,5 @@
+<% form_tag :action => 'process_login' do -%>
+   Login: <%= text_field "user", "username" %>
+   Haslo: <%= password_field "user", "password" %>
+   <%= submit_tag %>
+<% end -%>

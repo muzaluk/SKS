@@ -1,0 +1,24 @@
+<h1>Editing news</h1>
+
+<% form_for(@news) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tytul %><br />
+    <%= f.text_field :tytul %>
+  </p>
+  <p>
+    <%= f.label :tresc %><br />
+    <%= f.text_field :tresc %>
+  </p>
+  <p>
+    <%= f.label :dodane %><br />
+    <%= f.date_select :dodane %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @news %> |
+<%= link_to 'Back', news_index_path %>
