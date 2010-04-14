@@ -1,4 +1,5 @@
 class NewsController < ApplicationController
+  before_filter :login_required, :only => [:new, :edit, :create, :update, :destroy]
   # GET /news
   # GET /news.xml
   def index

@@ -1670,3 +1670,270 @@ The error occurred while evaluating nil.[]) on line #3 of app/views/user/login.h
 Rendered rescues/_trace (47.2ms)
 Rendered rescues/_request_and_response (1.5ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-14 21:01:50) [GET]
+
+ActionController::RoutingError (No route matches "/MainPage" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-14 21:01:53) [GET]
+
+ActionController::RoutingError (No route matches "/MainPage/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:03:33) [GET]
+Rendering main_page/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:08:20) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:11:27) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:14:15) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+
+ActionView::TemplateError (undefined local variable or method `users_path' for #<ActionView::Base:0xb750ee04>) on line #11 of app/views/main_page/index.html.erb:
+8:   </tr>
+9: <% end %>
+10: <h1>Link do logowania sie dla admina</h1>
+11: <%= link_to "User", users_path %>
+
+    app/views/main_page/index.html.erb:11
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:19:11) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+
+ActionView::TemplateError (undefined local variable or method `login_user_path' for #<ActionView::Base:0xb7410b10>) on line #11 of app/views/main_page/index.html.erb:
+8:   </tr>
+9: <% end %>
+10: <h1>Link do logowania sie dla admina</h1>
+11: <%= link_to "User", login_user_path %>
+
+    app/views/main_page/index.html.erb:11
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:20:09) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+
+ActionView::TemplateError (undefined local variable or method `user_path' for #<ActionView::Base:0xb74b0b10>) on line #11 of app/views/main_page/index.html.erb:
+8:   </tr>
+9: <% end %>
+10: <h1>Link do logowania sie dla admina</h1>
+11: <%= link_to "User", user_path %>
+
+    app/views/main_page/index.html.erb:11
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-04-14 21:21:43) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-14 21:21:44) [GET]
+Rendering user/login
+Completed in 32ms (View: 23, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:24:17) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+Completed in 32ms (View: 25, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-14 21:24:18) [GET]
+
+ActionController::RoutingError (No route matches "/mainpage/user" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:25:21) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+Completed in 30ms (View: 23, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:27:25) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering main_page/index
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-04-14 21:27:27) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-14 21:27:27) [GET]
+Rendering user/login
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-04-14 21:27:37) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-14 21:27:37) [GET]
+Rendering user/login
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#process_login (for 127.0.0.1 at 2010-04-14 21:27:43) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"iz+UY8G8+YqzkuLINIoxz/+CRh/CfdPSA/6lhZcIkSM=", "user"=>{"username"=>"lukasz", "password"=>"lukasz"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = 'lukasz' AND "users"."username" = 'lukasz') LIMIT 1[0m
+Redirected to http://localhost:3000/user/my_account
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/user/process_login]
+
+
+Processing UserController#my_account (for 127.0.0.1 at 2010-04-14 21:27:43) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering user/my_account
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/user/my_account]
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-04-14 21:32:24) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Redirected to http://localhost:3000/user/login
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-14 21:32:24) [GET]
+Rendering user/login
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-04-14 21:32:27) [GET]
+  [4;35;1mNews Load (0.6ms)[0m   [0mSELECT * FROM "news" [0m
+Rendering main_page/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-04-14 21:32:30) [GET]
+  [4;36;1mNews Load (0.6ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/news
+Rendering news/index
+Completed in 29ms (View: 21, DB: 1) | 200 OK [http://localhost/news]
+
+
+Processing NewsController#edit (for 127.0.0.1 at 2010-04-14 21:32:32) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/user/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/news/1/edit]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-14 21:32:32) [GET]
+Rendering user/login
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing NewsController#show (for 127.0.0.1 at 2010-04-14 21:32:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mNews Load (0.3ms)[0m   [0mSELECT * FROM "news" WHERE ("news"."id" = 1) [0m
+Rendering template within layouts/news
+Rendering news/show
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/news/1]
+
+
+Processing NewsController#edit (for 127.0.0.1 at 2010-04-14 21:32:37) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/user/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/news/1/edit]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-14 21:32:37) [GET]
+Rendering user/login
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
