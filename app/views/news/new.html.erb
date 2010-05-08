@@ -1,3 +1,7 @@
+<% content_for :leftmenu do %>
+	<%= link_to "wszystkie", {:controller=>"news"} %><br/>
+	<%= link_to "dodaj", {:controller=>"news", :action=>"new"} %>
+<% end %>
 <h1>New news</h1>
 
 <% form_for(:news, :url => news_index_url) do |f| %>

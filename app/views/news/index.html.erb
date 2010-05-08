@@ -1,3 +1,8 @@
+<% content_for :leftmenu do %>
+	<%= link_to "wszystkie", {:controller=>"news"} %><br/>
+	<%= link_to "dodaj", {:controller=>"news", :action=>"new"} %>
+<% end %>
+
 <h1>Listing news</h1>
 
 <table>
@@ -20,5 +25,3 @@
 </table>
 
 <br />
-
-<%= link_to 'New news', new_news_path %>
