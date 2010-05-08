@@ -79,7 +79,7 @@
                                     <div class="BlockContent-body">
                                         <div>
                                                           <ul><li><b>May 08, 2010</b>
-                                                          <p><%= link_to "Zaloguj się", {:controller=>"user"} %><br/>
+                                                          <p><%= link_to "User", {:controller=>"user"} %><br/>
                                                                 <a href="javascript:void(0)">Read more...</a>                
                                                           </p></li></ul>
                                                           </div>
