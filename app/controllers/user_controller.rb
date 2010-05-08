@@ -25,6 +25,7 @@ class UserController < ApplicationController
   end
 
   def my_account
+    render :layout => "admin" 
   end
 
 end

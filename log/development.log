@@ -7047,3 +7047,287 @@ Processing NewsController#index (for 127.0.0.1 at 2010-05-08 19:47:51) [GET]
 Rendering template within layouts/admin
 Rendering news/index
 Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/news]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 19:54:42) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mNews Load (0.3ms)[0m   [0mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 53ms (View: 26, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 19:54:45) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 19:54:45) [GET]
+  Parameters: {"id"=>"script"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-08 19:54:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Redirected to http://localhost:3000/user/login
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-08 19:54:49) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/login
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 19:54:49) [GET]
+  Parameters: {"id"=>"script"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#process_login (for 127.0.0.1 at 2010-05-08 19:54:58) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"vIPROMWUinJu7w0mP4bOoOYzaqVfnPsQd73Ev5ynlxM=", "user"=>{"username"=>"lukasz", "password"=>"lukasz"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = 'lukasz' AND "users"."username" = 'lukasz') LIMIT 1[0m
+Redirected to http://localhost:3000/user/my_account
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/user/process_login]
+
+
+Processing UserController#my_account (for 127.0.0.1 at 2010-05-08 19:54:58) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/my_account
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/user/my_account]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 19:54:58) [GET]
+  Parameters: {"id"=>"script"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#news (for 127.0.0.1 at 2010-05-08 19:55:14) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to news. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-05-08 19:55:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mNews Load (0.3ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/admin
+Rendering news/index
+Completed in 39ms (View: 26, DB: 1) | 200 OK [http://localhost/news/]
+
+
+Processing NewsController#javascripts to js (for 127.0.0.1 at 2010-05-08 19:55:25) [GET]
+  Parameters: {"id"=>"script"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, create, destroy, edit, index, login_required, new, set_user, show, and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-08 19:59:00) [GET]
+
+ActionController::RoutingError (No route matches "/logout" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-05-08 19:59:08) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Redirected to http://localhost:3000/user/login
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-08 19:59:08) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 19:59:08) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-08 19:59:11) [GET]
+
+NoMethodError (undefined method `layout' for #<UserController:0xb726f5cc>):
+  app/controllers/user_controller.rb:4:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-08 20:04:23) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-08 20:04:24) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 20:04:24) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#process_login (for 127.0.0.1 at 2010-05-08 20:04:29) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"UXsu/syXZ64bE1pNdbt68eWYUgwJ/rHnU3YNz/t75s4=", "user"=>{"username"=>"lukasz", "password"=>"lukasz"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = 'lukasz' AND "users"."username" = 'lukasz') LIMIT 1[0m
+Redirected to http://localhost:3000/user/my_account
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/user/process_login]
+
+
+Processing UserController#my_account (for 127.0.0.1 at 2010-05-08 20:04:29) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering user/my_account
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/user/my_account]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 20:04:30) [GET]
+  Parameters: {"id"=>"script"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-05-08 20:04:33) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mNews Load (0.3ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/admin
+Rendering news/index
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/news]
