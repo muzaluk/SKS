@@ -4430,3 +4430,57 @@ Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 13:21:39) [GET]
   [4;36;1mNews Load (0.6ms)[0m   [0;1mSELECT * FROM "news" [0m
 Rendering main_page/index
 Completed in 22ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 17:37:12) [GET]
+  [4;36;1mNews Load (1.8ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 153ms (View: 123, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-08 17:37:17) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-08 17:37:17) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 37ms (View: 20, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 17:37:17) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#stylesheets to css (for 127.0.0.1 at 2010-05-08 17:37:17) [GET]
+  Parameters: {"id"=>"style"}
+
+ActionController::UnknownAction (No action responded to stylesheets. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

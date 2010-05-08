@@ -41,7 +41,7 @@
                     <ul class="artmenu">
                         <li><a href="#" class=" active"><span><span>Strona Głowna</span></span></a></li>
                         <li><a href="#"><span><span>Terminarz</span></span></a></li>
-						<li><a href="#"><span><span>O Klubie</span></span></a></li>
+			<li><a href="#"><span><span>O Klubie</span></span></a></li>
                         <li><a href="#"><span><span>Media</span></span></a></li>
                         <li><a href="#"><span><span>Sklep</span></span></a></li>
                         <li><a href="#"><span><span>Kontakt</span></span></a></li>
@@ -93,17 +93,8 @@
                             <div class="Post-body">
                         <div class="Post-inner">
                             <h2 class="PostHeaderIcon-wrapper">
-<span class="PostHeader">
-<h1>Strona glowna</h1>
-<h1>Ponizej powinny znajdowac sie newsy (o ile sa jakies w bazie)</h1>
-<% @newsy.each do |news| %>
-  <tr>
-    <td><%=h news.tytul %></td>
-    <td><%=h news.tresc %></td>
-    <td><%=h news.dodane %></td>
-  </tr>
-<% end %>
-</span>
+                            <p style="color: green"><%= flash[:notice] %></p>
+                            <%= yield %>                            
                             </h2>
                             <div class="PostContent">    
                                 <table class="table" width="100%">
