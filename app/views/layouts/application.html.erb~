@@ -12,7 +12,7 @@
 
     <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" />
+    <%= stylesheet_link_tag 'style' %> 
     <!--[if IE 6]><link rel="stylesheet" href="stylesheets/style.ie6.css" type="text/css" media="screen" /><![endif]-->
 </head>
 <body>
@@ -39,9 +39,9 @@
                 </div>
                 <div class="nav">
                     <ul class="artmenu">
-                        <li><a href="#" class=" active"><span><span>Strona Głowna</span></span></a></li>
+                        <li><%= link_to "<span><span>Strona Głowna</span></span>", {:controller=>"main_page", :action=>"oklubie"}, :class=>" active" %></li>
                         <li><a href="#"><span><span>Terminarz</span></span></a></li>
-			<li><a href="#"><span><span>O Klubie</span></span></a></li>
+			<li><%= link_to "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} %></li>
                         <li><a href="#"><span><span>Media</span></span></a></li>
                         <li><a href="#"><span><span>Sklep</span></span></a></li>
                         <li><a href="#"><span><span>Kontakt</span></span></a></li>
@@ -93,8 +93,8 @@
                             <div class="Post-body">
                         <div class="Post-inner">
                             <h2 class="PostHeaderIcon-wrapper">
-                            <p style="color: green"><%= flash[:notice] %></p>
-                            <%= yield %>                            
+                                <p style="color: green"><%= flash[:notice] %></p>
+                                <%= yield %>                            
                             </h2>
                             <div class="PostContent">    
                                 <table class="table" width="100%">

@@ -1,0 +1,12 @@
+<h1>Strona glowna</h1>
+<h1>Ponizej powinny znajdowac sie newsy (o ile sa jakies w bazie)</h1>
+<table>
+<% @newsy.each do |news| %>
+  <tr>
+    <td><%=h news.tytul %></td>
+    <td><%=h news.tresc %></td>
+    <td><%=h news.dodane %></td>
+  </tr>
+<% end %>
+</table>
+

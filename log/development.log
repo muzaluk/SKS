@@ -4484,3 +4484,1093 @@ ActionController::UnknownAction (No action responded to stylesheets. Actions: ac
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 17:46:53) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 17:52:29) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 18:03:59) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 40ms (View: 33, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:04:03) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:04:03) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#stylesheets to css (for 127.0.0.1 at 2010-05-08 18:04:03) [GET]
+  Parameters: {"id"=>"style"}
+
+ActionController::UnknownAction (No action responded to stylesheets. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 18:08:55) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:08:59) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:08:59) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-08 18:09:04) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-08 18:09:04) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:09:04) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:09:49) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:09:49) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:09:58) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:09:58) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:12:12) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected '='
+...e", :action=>"oklubie", class="active"} ).to_s); @output_buf...
+                              ^
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected '}', expecting ')'
+...on=>"oklubie", class="active"} ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" dir=\"ltr\" lang=\"en-US\" xml:lang=\"en\">\r\n<head>\r\n    <!--\r\n    Created by Artisteer v2.0.2.15338\r\n    Base template (without user's data) checked by http://validator.w3.org : \"This page is valid XHTML 1.0 Transitional\"\r\n    -->\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=EmulateIE7\" />\r\n    <title>Pomorskie Kopyto FC</title>\r\n\r\n    <script type=\"text/javascript\" src=\"javascripts/script.js\"></script>\r\n\n    "
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'style' ).to_s); @output_buffer.concat " \r\n    <!--[if IE 6]><link rel=\"stylesheet\" href=\"stylesheets/style.ie6.css\" type=\"text/css\" media=\"screen\" /><![endif]-->\r\n</head>\r\n<body>\r\n    <div class=\"PageBackgroundGradient\"></div>\r\n    <div class=\"Main\">\r\n        <div class=\"Sheet\">\r\n            <div class=\"Sheet-tl\"></div>\r\n            <div class=\"Sheet-tr\"><div></div></div>\r\n            <div class=\"Sheet-bl\"><div></div></div>\r\n            <div class=\"Sheet-br\"><div></div></div>\r\n            <div class=\"Sheet-tc\"><div></div></div>\r\n            <div class=\"Sheet-bc\"><div></div></div>\r\n            <div class=\"Sheet-cl\"><div></div></div>\r\n            <div class=\"Sheet-cr\"><div></div></div>\r\n            <div class=\"Sheet-cc\"></div>\r\n            <div class=\"Sheet-body\">\r\n                <div class=\"Header\">\r\n                    <div class=\"Header-png\"></div>\r\n                    <div class=\"Header-jpeg\"></div>\r\n                    <div class=\"logo\">\r\n                        <h1 id=\"name-text\" class=\"logo-name\"><a href=\"#\">Pomorskie Kopyto FC</a></h1>\r\n                        <div id=\"slogan-text\" class=\"logo-text\">You can't stop us</div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"nav\">\r\n                    <ul class=\"artmenu\">\r\n                        <li>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "<span><span>Strona Głowna</span></span>", {:controller=>"main_page", :action=>"oklubie", class="active"} ).to_s); @output_buffer.concat "</li>\r\n                        <li><a href=\"#\"><span><span>Terminarz</span></span></a></li>\r\n\t\t\t<li>"
+
+; @output_buffer.concat(( link_to "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} ).to_s); @output_buffer.concat "</li>\r\n                        <li><a href=\"#\"><span><span>Media</span></span></a></li>\r\n                        <li><a href=\"#\"><span><span>Sklep</span></span></a></li>\r\n                        <li><a href=\"#\"><span><span>Kontakt</span></span></a></li>\r\n                    </ul>\r\n                    <div class=\"l\">\r\n                    </div>\r\n                    <div class=\"r\">\r\n                        <div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"contentLayout\">\r\n                    <div class=\"sidebar1\">\r\n                        <div class=\"Block\">\r\n                            <div class=\"Block-tl\"></div>\r\n                            <div class=\"Block-tr\"><div></div></div>\r\n                            <div class=\"Block-bl\"><div></div></div>\r\n                            <div class=\"Block-br\"><div></div></div>\r\n                            <div class=\"Block-tc\"><div></div></div>\r\n                            <div class=\"Block-bc\"><div></div></div>\r\n                            <div class=\"Block-cl\"><div></div></div>\r\n                            <div class=\"Block-cr\"><div></div></div>\r\n                            <div class=\"Block-cc\"></div>\r\n                            <div class=\"Block-body\">\r\n                                <div class=\"BlockHeader\">\r\n                                    <div class=\"header-tag-icon\">\r\n                                        <div class=\"BlockHeader-text\">\r\n                                            Na skr\303\263ty\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"l\"></div>\r\n                                    <div class=\"r\"><div></div></div>\r\n                                </div>\r\n                                <div class=\"BlockContent\">\r\n                                    <div class=\"BlockContent-body\">\r\n                                        <div>\r\n                                                          <ul><li><b>May 08, 2010</b>\r\n                                                          <p>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "Zaloguj się", {:controller=>"user"} ).to_s); @output_buffer.concat "<br/>\r\n                                                                <a href=\"javascript:void(0)\">Read more...</a>                \r\n                                                          </p></li></ul>\r\n                                                          </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"content\">\r\n                        <div class=\"Post\">\r\n                            <div class=\"Post-body\">\r\n                        <div class=\"Post-inner\">\r\n                            <h2 class=\"PostHeaderIcon-wrapper\">\r\n                                <p style=\"color: green\">"
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n                                "
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "                            \n                            </h2>\r\n                            <div class=\"PostContent\">    \r\n                                <table class=\"table\" width=\"100%\">\r\n                                \t<tr>\r\n                                \t\t<td width=\"33%\" valign=\"top\">\r\n                                \t\t<div class=\"Block\">\r\n                                \t\t\t<div class=\"Block-body\">\r\n                                \t\t\t\t<div class=\"BlockHeader\">\r\n                                \t\t\t\t\t<!--div class=\"header-tag-icon\"-->\r\n                                \t\t\t\t\t</div>\r\n                                \t\t\t\t</div>\r\n                                \t\t\t</div>\r\n                                \t\t</div>\r\n                                \t\t</td>\r\n                                \t\t<td width=\"33%\" valign=\"top\">\r\n                                \t\t<div class=\"Block\">\r\n                                \t\t\t<div class=\"Block-body\">\r\n                                \t\t\t\t<div class=\"BlockHeader\">\r\n                                \t\t\t\t\t<!--div class=\"header-tag-icon\"-->\r\n                                \t\t\t\t\t<div class=\"BlockHeader-text\">                                \t\t\t\t\r\n                                \t\t\t</div>\r\n                                \t\t</div>\r\n                                \t\t</td>\r\n                                \t\t<td width=\"33%\" valign=\"top\">\r\n                                \t\t<div class=\"Block\">\r\n                                \t\t\t<div class=\"Block-body\">\r\n                                \t\t\t\t<div class=\"BlockHeader\">\r\n                                \t\t\t\t\t<!--div class=\"header-tag-icon\"-->\r\n                                \t\t\t\t\t<div class=\"BlockHeader-text\">\r\n                                \t\t\t\t</div>\r\n                                \t\t\t</div>\r\n                                \t\t</div>\r\n                                \t\t</td>\r\n                                \t</tr>\r\n                                </table>\r\n                                    \r\n                            </div>\r\n                            <div class=\"cleared\"></div>\r\n                        </div>\r\n                        \r\n                            </div>\r\n                        </div>\r\n                        <div class=\"Post\">\r\n                            <div class=\"Post-body\">\r\n                        <div class=\"Post-inner\">                                                                \r\n                            </div>\r\n                            <div class=\"cleared\"></div>\r\n                        </div>\r\n                        \r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"cleared\"></div><div class=\"Footer\">\r\n                    <div class=\"Footer-inner\">\r\n                        <a href=\"#\" class=\"rss-tag-icon\" title=\"RSS\"></a>\r\n                        <div class=\"Footer-text\">\r\n                            <p><a href=\"#\">Contact Us</a> | <a href=\"#\">Terms of Use</a> | <a href=\"#\">Trademarks</a>\r\n                                | <a href=\"#\">Privacy Statement</a><br />\r\n                                Copyright &copy; 2009 ---. All Rights Reserved.</p>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"Footer-background\"></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"cleared\"></div>\r\n        <!-- If you'd like to support Artisteer, having the \"created with\" link somewhere on your blog is the best way; it's our only promotion or advertising. -->\r\n        <p class=\"page-footer\"><a href=\"http://www.inf.ug.edu.pl:8080/\">Web Template</a> created by UG-Team</p>\r\n    </div>\r\n    \r\n</body>\r\n</html>\r\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/myny/SKS/SKS/app/views/layouts/application.html.erb:174:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected '='
+...e", :action=>"oklubie", class="active"} ).to_s); @output_buf...
+                              ^
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected '}', expecting ')'
+...on=>"oklubie", class="active"} ).to_s); @output_buffer.conca...
+                              ^) on line #42 of app/views/layouts/application.html.erb:
+39:                 </div>
+40:                 <div class="nav">
+41:                     <ul class="artmenu">
+42:                         <li><%= link_to "<span><span>Strona Głowna</span></span>", {:controller=>"main_page", :action=>"oklubie", class="active"} %></li>
+43:                         <li><a href="#"><span><span>Terminarz</span></span></a></li>
+44: 			<li><%= link_to "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} %></li>
+45:                         <li><a href="#"><span><span>Media</span></span></a></li>
+
+    app/views/layouts/application.html.erb:174:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 18:12:54) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+..., :action=>"oklubie", :class="active"} ).to_s); @output_buff...
+                              ^
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected '}', expecting ')'
+...n=>"oklubie", :class="active"} ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" dir=\"ltr\" lang=\"en-US\" xml:lang=\"en\">\r\n<head>\r\n    <!--\r\n    Created by Artisteer v2.0.2.15338\r\n    Base template (without user's data) checked by http://validator.w3.org : \"This page is valid XHTML 1.0 Transitional\"\r\n    -->\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=EmulateIE7\" />\r\n    <title>Pomorskie Kopyto FC</title>\r\n\r\n    <script type=\"text/javascript\" src=\"javascripts/script.js\"></script>\r\n\n    "
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'style' ).to_s); @output_buffer.concat " \r\n    <!--[if IE 6]><link rel=\"stylesheet\" href=\"stylesheets/style.ie6.css\" type=\"text/css\" media=\"screen\" /><![endif]-->\r\n</head>\r\n<body>\r\n    <div class=\"PageBackgroundGradient\"></div>\r\n    <div class=\"Main\">\r\n        <div class=\"Sheet\">\r\n            <div class=\"Sheet-tl\"></div>\r\n            <div class=\"Sheet-tr\"><div></div></div>\r\n            <div class=\"Sheet-bl\"><div></div></div>\r\n            <div class=\"Sheet-br\"><div></div></div>\r\n            <div class=\"Sheet-tc\"><div></div></div>\r\n            <div class=\"Sheet-bc\"><div></div></div>\r\n            <div class=\"Sheet-cl\"><div></div></div>\r\n            <div class=\"Sheet-cr\"><div></div></div>\r\n            <div class=\"Sheet-cc\"></div>\r\n            <div class=\"Sheet-body\">\r\n                <div class=\"Header\">\r\n                    <div class=\"Header-png\"></div>\r\n                    <div class=\"Header-jpeg\"></div>\r\n                    <div class=\"logo\">\r\n                        <h1 id=\"name-text\" class=\"logo-name\"><a href=\"#\">Pomorskie Kopyto FC</a></h1>\r\n                        <div id=\"slogan-text\" class=\"logo-text\">You can't stop us</div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"nav\">\r\n                    <ul class=\"artmenu\">\r\n                        <li>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "<span><span>Strona Głowna</span></span>", {:controller=>"main_page", :action=>"oklubie", :class="active"} ).to_s); @output_buffer.concat "</li>\r\n                        <li><a href=\"#\"><span><span>Terminarz</span></span></a></li>\r\n\t\t\t<li>"
+
+; @output_buffer.concat(( link_to "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} ).to_s); @output_buffer.concat "</li>\r\n                        <li><a href=\"#\"><span><span>Media</span></span></a></li>\r\n                        <li><a href=\"#\"><span><span>Sklep</span></span></a></li>\r\n                        <li><a href=\"#\"><span><span>Kontakt</span></span></a></li>\r\n                    </ul>\r\n                    <div class=\"l\">\r\n                    </div>\r\n                    <div class=\"r\">\r\n                        <div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"contentLayout\">\r\n                    <div class=\"sidebar1\">\r\n                        <div class=\"Block\">\r\n                            <div class=\"Block-tl\"></div>\r\n                            <div class=\"Block-tr\"><div></div></div>\r\n                            <div class=\"Block-bl\"><div></div></div>\r\n                            <div class=\"Block-br\"><div></div></div>\r\n                            <div class=\"Block-tc\"><div></div></div>\r\n                            <div class=\"Block-bc\"><div></div></div>\r\n                            <div class=\"Block-cl\"><div></div></div>\r\n                            <div class=\"Block-cr\"><div></div></div>\r\n                            <div class=\"Block-cc\"></div>\r\n                            <div class=\"Block-body\">\r\n                                <div class=\"BlockHeader\">\r\n                                    <div class=\"header-tag-icon\">\r\n                                        <div class=\"BlockHeader-text\">\r\n                                            Na skr\303\263ty\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"l\"></div>\r\n                                    <div class=\"r\"><div></div></div>\r\n                                </div>\r\n                                <div class=\"BlockContent\">\r\n                                    <div class=\"BlockContent-body\">\r\n                                        <div>\r\n                                                          <ul><li><b>May 08, 2010</b>\r\n                                                          <p>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "Zaloguj się", {:controller=>"user"} ).to_s); @output_buffer.concat "<br/>\r\n                                                                <a href=\"javascript:void(0)\">Read more...</a>                \r\n                                                          </p></li></ul>\r\n                                                          </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"content\">\r\n                        <div class=\"Post\">\r\n                            <div class=\"Post-body\">\r\n                        <div class=\"Post-inner\">\r\n                            <h2 class=\"PostHeaderIcon-wrapper\">\r\n                                <p style=\"color: green\">"
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n                                "
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "                            \n                            </h2>\r\n                            <div class=\"PostContent\">    \r\n                                <table class=\"table\" width=\"100%\">\r\n                                \t<tr>\r\n                                \t\t<td width=\"33%\" valign=\"top\">\r\n                                \t\t<div class=\"Block\">\r\n                                \t\t\t<div class=\"Block-body\">\r\n                                \t\t\t\t<div class=\"BlockHeader\">\r\n                                \t\t\t\t\t<!--div class=\"header-tag-icon\"-->\r\n                                \t\t\t\t\t</div>\r\n                                \t\t\t\t</div>\r\n                                \t\t\t</div>\r\n                                \t\t</div>\r\n                                \t\t</td>\r\n                                \t\t<td width=\"33%\" valign=\"top\">\r\n                                \t\t<div class=\"Block\">\r\n                                \t\t\t<div class=\"Block-body\">\r\n                                \t\t\t\t<div class=\"BlockHeader\">\r\n                                \t\t\t\t\t<!--div class=\"header-tag-icon\"-->\r\n                                \t\t\t\t\t<div class=\"BlockHeader-text\">                                \t\t\t\t\r\n                                \t\t\t</div>\r\n                                \t\t</div>\r\n                                \t\t</td>\r\n                                \t\t<td width=\"33%\" valign=\"top\">\r\n                                \t\t<div class=\"Block\">\r\n                                \t\t\t<div class=\"Block-body\">\r\n                                \t\t\t\t<div class=\"BlockHeader\">\r\n                                \t\t\t\t\t<!--div class=\"header-tag-icon\"-->\r\n                                \t\t\t\t\t<div class=\"BlockHeader-text\">\r\n                                \t\t\t\t</div>\r\n                                \t\t\t</div>\r\n                                \t\t</div>\r\n                                \t\t</td>\r\n                                \t</tr>\r\n                                </table>\r\n                                    \r\n                            </div>\r\n                            <div class=\"cleared\"></div>\r\n                        </div>\r\n                        \r\n                            </div>\r\n                        </div>\r\n                        <div class=\"Post\">\r\n                            <div class=\"Post-body\">\r\n                        <div class=\"Post-inner\">                                                                \r\n                            </div>\r\n                            <div class=\"cleared\"></div>\r\n                        </div>\r\n                        \r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"cleared\"></div><div class=\"Footer\">\r\n                    <div class=\"Footer-inner\">\r\n                        <a href=\"#\" class=\"rss-tag-icon\" title=\"RSS\"></a>\r\n                        <div class=\"Footer-text\">\r\n                            <p><a href=\"#\">Contact Us</a> | <a href=\"#\">Terms of Use</a> | <a href=\"#\">Trademarks</a>\r\n                                | <a href=\"#\">Privacy Statement</a><br />\r\n                                Copyright &copy; 2009 ---. All Rights Reserved.</p>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"Footer-background\"></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"cleared\"></div>\r\n        <!-- If you'd like to support Artisteer, having the \"created with\" link somewhere on your blog is the best way; it's our only promotion or advertising. -->\r\n        <p class=\"page-footer\"><a href=\"http://www.inf.ug.edu.pl:8080/\">Web Template</a> created by UG-Team</p>\r\n    </div>\r\n    \r\n</body>\r\n</html>\r\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/myny/SKS/SKS/app/views/layouts/application.html.erb:174:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+..., :action=>"oklubie", :class="active"} ).to_s); @output_buff...
+                              ^
+/home/myny/SKS/SKS/app/views/layouts/application.html.erb:42: syntax error, unexpected '}', expecting ')'
+...n=>"oklubie", :class="active"} ).to_s); @output_buffer.conca...
+                              ^) on line #42 of app/views/layouts/application.html.erb:
+39:                 </div>
+40:                 <div class="nav">
+41:                     <ul class="artmenu">
+42:                         <li><%= link_to "<span><span>Strona Głowna</span></span>", {:controller=>"main_page", :action=>"oklubie", :class="active"} %></li>
+43:                         <li><a href="#"><span><span>Terminarz</span></span></a></li>
+44: 			<li><%= link_to "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} %></li>
+45:                         <li><a href="#"><span><span>Media</span></span></a></li>
+
+    app/views/layouts/application.html.erb:174:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 18:14:04) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:14:07) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:14:08) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:14:09) [GET]
+  Parameters: {"class"=>"active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:14:09) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:14:13) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:14:13) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:14:15) [GET]
+  Parameters: {"class"=>"active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:14:15) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:15:39) [GET]
+  Parameters: {"class"=>"active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 34ms (View: 31, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:15:39) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:15:42) [GET]
+  Parameters: {"class"=>" active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=+active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:15:42) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 18:15:48) [GET]
+  [4;36;1mNews Load (0.7ms)[0m   [0;1mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/main_page/]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:15:48) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-08 18:15:52) [GET]
+  [4;35;1mNews Load (0.6ms)[0m   [0mSELECT * FROM "news" [0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:15:56) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:15:56) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:16:01) [GET]
+  Parameters: {"class"=>" active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=+active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:16:01) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:16:03) [GET]
+  Parameters: {"class"=>" active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=+active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:16:03) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:20:59) [GET]
+  Parameters: {"class"=>" active"}
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 33ms (View: 30, DB: 0) | 200 OK [http://localhost/main_page/oklubie?class=+active]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:20:59) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:21:04) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:21:04) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainPageController#oklubie (for 127.0.0.1 at 2010-05-08 18:21:08) [GET]
+Rendering template within layouts/application
+Rendering main_page/oklubie
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/main_page/oklubie]
+
+
+Processing MainPageController#javascripts to js (for 127.0.0.1 at 2010-05-08 18:21:08) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login_required, oklubie, and set_user):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
