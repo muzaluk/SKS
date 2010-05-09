@@ -4,5 +4,6 @@ class MainPageController < ApplicationController
   end
   def oklubie
   end
-
+  def kontakt
+  end 
 end
