@@ -1,3 +1,7 @@
+<% content_for :leftmenu do %>
+	<%= link_to "wszystkie", {:controller=>"news"} %><br/>
+	<%= link_to "dodaj", {:controller=>"news", :action=>"new"} %><br/>
+<% end %>
 <p>
   <b>Tytul:</b>
   <%=h @news.tytul %>

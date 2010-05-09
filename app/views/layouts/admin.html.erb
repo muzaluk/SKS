@@ -75,7 +75,9 @@
                                 <div class="BlockContent">
                                     <div class="BlockContent-body">
                                         <div>
-                                            <p><%= yield :leftmenu %>
+                                            <p>
+                                                <%= yield :leftmenu %>
+                                                <br><br><%= link_to "wyloguj", {:controller=>"user", :action=>"logout"} %>
                                             </p>
                                         </div>
                                     </div>
