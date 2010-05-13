@@ -2,10 +2,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
 <head>
-    <!--
-    Created by Artisteer v2.0.2.15338
-    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
-    -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <title>Pomorskie Kopyto FC</title>
@@ -39,12 +35,12 @@
                 </div>
                 <div class="nav">
                     <ul class="artmenu">
-                        <li><%= link_to "<span><span>Strona Głowna</span></span>", {:controller=>"main_page"}, :class=>"active" %></li>
-                        <li><a href="#"><span><span>Terminarz</span></span></a></li>
-			<li><%= link_to "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} %></li>
-                        <li><a href="#"><span><span>Media</span></span></a></li>
-                        <li><a href="#"><span><span>Sklep</span></span></a></li>
-            <li><%= link_to "<span><span>Kontakt</span></span>", {:controller=>"main_page", :action=>"kontakt"} %></li>
+                        <li><%= link_to "<span><span>Strona Głowna</span></span>", root_path, :class=>"active" %></li>
+                        <li><%= link_to "<span><span>Terminarz</span></span>", calendar_path %></li>
+						<li><%= link_to "<span><span>O Klubie</span></span>", about_path %></li>
+                        <li><%= link_to "<span><span>Media</span></span>", media_path %></li>
+                        <li><%= link_to "<span><span>Sklep</span></span>", shop_path %></li>
+						<li><%= link_to "<span><span>Kontakt</span></span>", kontakt_path %></li>
                     </ul>
                     <div class="l">
                     </div>
@@ -69,7 +65,7 @@
                                 <div class="BlockHeader">
                                     <div class="header-tag-icon">
                                         <div class="BlockHeader-text">
-                                            Na skróty
+                                            Menu
                                         </div>
                                     </div>
                                     <div class="l"></div>
@@ -78,11 +74,11 @@
                                 <div class="BlockContent">
                                     <div class="BlockContent-body">
                                         <div>
-                                                          <ul><li><b>May 08, 2010</b>
-                                                          <p><%= link_to "Zaloguj się", {:controller=>"user"} %><br/>
-                                                                <a href="javascript:void(0)">Read more...</a>                
-                                                          </p></li></ul>
-                                                          </div>
+                                        <!-- ----------- LEFT MENU ------------- -->
+                                                          <ul class="leftmenu">
+                                                          <li><%= link_to "Zaloguj się", {:controller=>"user"} %></li>
+                                                          </ul>
+                                       </div>
                                     </div>
                                 </div>
                             </div>

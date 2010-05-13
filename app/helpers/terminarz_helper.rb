@@ -1,0 +1,2 @@
+module TerminarzHelper
+end

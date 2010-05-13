@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data_spotkania: 2010-05-12 19:07:31
+  goscie: MyString
+  gospodarze: MyString
+  wynik: MyString
+
+two:
+  data_spotkania: 2010-05-12 19:07:31
+  goscie: MyString
+  gospodarze: MyString
+  wynik: MyString

@@ -1118,7 +1118,7 @@ a:link
 {
   font-family: Arial, Helvetica, Sans-Serif;
   text-decoration: none;
-  color: #4D8844;
+  color: black;
 }
 
 /* Adds special style to a visited link. */
@@ -1126,7 +1126,7 @@ a:visited, a.visited
 {
   font-family: Arial, Helvetica, Sans-Serif;
   text-decoration: none;
-  color: #174F26;
+  color: black;
 }
 
 /* :hover - adds special style to an element when you mouse over it. */
@@ -1530,4 +1530,108 @@ input, select
 
 /* end LayoutCell */
 
+/* LEFT MENU */	
+ul.leftmenu a:link
+{
+	color: black;
+	text-decoration: none;
+}
+ul.leftmenu a:visited
+{
+	color: black;
+	text-decoration: none;
+}
+ul.leftmenu a:hover
+{
+	color: green;
+	text-decoration: none;
+}
 
+/*  END */
+.news_data{
+	width: 100px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	padding: 10px;
+	margin: 10px;
+	border-style: none;
+	border-width: 2px;
+	border-color: black;
+}
+.news_tresc{
+	font-size: 12px;
+	color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-color: green;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: left;
+}
+.head{
+	font-size: 25px;
+	color: white;
+	border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: black;
+	padding: 10px;
+	margin: 15px;
+	font-weight: bold;
+}
+td.news_actions{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+.zaokraglone{
+	border-radius: 10px;
+}
+caption.terminy{
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: italic;
+	padding: 10px;
+	color: black;
+}
+tr.wyniki{
+	width: 100%;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: green;
+	border-radius: 10px;
+	border-collapse: collapse;
+}
+tr.wyniki td{
+	width: 250px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: green;
+	border-collapse: collapse;
+	padding: 10px;
+	font-weight: bold;
+}
+tr.wyniki td.gole{
+	color: orange;
+	font-weight: bold;
+}
+tr.wyniki td.goscie{
+	color: red;
+	font-weight: bold;
+}
+tr.wyniki td.gospodarze{
+	color: blue;
+	font-weight: bold;
+}
+table.wyniki{
+	border-collapse: collapse;
+}

@@ -1,0 +1,15 @@
+<span class="head">Terminy spotkań:</span><br><br>
+
+<% @terminy.each do |t| %>
+	<table class="wyniki">
+	<caption class="head"><%= t.data_spotkania %><caption>
+	<tbody>
+	<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
+	<tr class="wyniki"><td class="goscie"> <%= t.goscie %> <td class="gole"> <%= t.wynik %> <td class="gospodarze"> <%= t.gospodarze %>
+	</tbody>
+	</table>
+	<br><br>
+<% end %>
+
+
+

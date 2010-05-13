@@ -21,7 +21,7 @@ class UserController < ApplicationController
   def logout
     reset_session
     flash[:message] = 'Logged out.'
-    redirect_to :action => 'login'
+    redirect_to(root_path)
   end
 
   def my_account

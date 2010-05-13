@@ -1,13 +1,9 @@
-<h1>Strona glowna</h1>
-<h1>Ponizej powinny znajdowac sie newsy (o ile sa jakies w bazie)</h1>
+<h1>Strona główna</h1>
+<span class="head">Ostatnie newsy:</span><br><br>
 <table>
 <% @newsy.each do |news| %>
-  <tr>
-    <td><%=h news.tytul %></td>
-    <td><%=h news.tresc %></td>
-    <td><%=h news.dodane %></td>
-  </tr>
+  <tr><td class="news_data"><%=h news.dodane %> || <%=h news.tytul %>
+   <tr><td class="news_tresc"><%=h news.tresc %>
+    
 <% end %>
 </table>
-<h2 class="srodek">Zdjęcie naszych zawodników</h2>
-<img src="/images/klub.jpg" alt="zdjecie druzyny" width="100%" height="100%"/>

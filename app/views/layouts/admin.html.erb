@@ -39,9 +39,10 @@
                 </div>
                 <div class="nav">
                     <ul class="artmenu">
-                        <li><%= link_to "<span><span>News'y</span></span>", {:controller=>"news"}, :class=>"active" %></li>
+						 <li><%= link_to "<span><span>Strona główna</span></span>", root_path %></li>
+                        <li><%= link_to "<span><span>News'y</span></span>", pokaz_wszystkie_path %></li>
                         <li><a href="#"><span><span>Zawodnicy</span></span></a></li>
-                        <li><a href="#"><span><span>Terminarz</span></span></a></li>
+                        <li><%= link_to "<span><span>Terminarz</span></span>", wszystkie_path %></li>
                     </ul>
                     <div class="l">
                     </div>
@@ -75,10 +76,10 @@
                                 <div class="BlockContent">
                                     <div class="BlockContent-body">
                                         <div>
-                                            <p>
-                                                <%= yield :leftmenu %>
-                                                <br><br><%= link_to "wyloguj", {:controller=>"user", :action=>"logout"} %>
-                                            </p>
+                                            <p><ul class="leftmenu">
+                                                <li><%= yield :leftmenu %></li>
+                                                <br><li><%= link_to "Wyloguj", {:controller=>"user", :action=>"logout"} %></li>
+                                            </p></ul>
                                         </div>
                                     </div>
                                 </div>
@@ -89,9 +90,8 @@
                         <div class="Post">
                             <div class="Post-body">
                         <div class="Post-inner">
-                            <h2 class="PostHeaderIcon-wrapper">
-                                <p style="color: green"><%= flash[:notice] %></p>
-                                <%= yield %>                            
+                            <h2 class="PostHeaderIcon-wrapper" >
+                                <ul class="leftmenu"><%= yield %></ul>                            
                             </h2>
                             <div class="PostContent">    
                                 <table class="table" width="100%">

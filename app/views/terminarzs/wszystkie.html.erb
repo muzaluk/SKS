@@ -1,0 +1,16 @@
+<% content_for :leftmenu do %>
+	<li><%= link_to "Pokaż wszystkie", wszystkie_path %><br/>
+	<li><%= link_to "Dodaj termin", dodaj_path%><br/>
+<% end %>
+
+<% @terminy.each do |terminarz| %>
+	<table class="wyniki">
+	<caption class="head"><%= terminarz.data_spotkania %><caption>
+	<tbody>
+	<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
+	<tr class="wyniki"><td class="goscie"> <%= terminarz.goscie %> <td class="gole"> <%= terminarz.wynik %> <td class="gospodarze"> <%= terminarz.gospodarze %>
+	<tr><td class="news_actions"><%= link_to 'Edit', edytuj_path %> || <%= link_to 'Delete', usun_path, :confirm => 'Jesteś pewien?', :method => :delete %>
+	</tbody>
+	</table>
+	<br><br>
+<% end %>

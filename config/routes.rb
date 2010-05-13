@@ -1,10 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :news
+  map.resources :terminarzs
 
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
-  #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
+   map.connect 'terminarzs/:id', :controller => 'terminarzs', :action => 'edytuj'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -43,4 +44,18 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.root :controller => "MainPage"
+  map.wszystkie '/showall', :controller => 'terminarzs', :action => 'wszystkie'
+  map.edytuj '/edit', :controller => 'terminarzs', :action => 'edytuj'
+  map.dodaj '/add_term', :controller => 'terminarzs', :action => 'dodaj'
+  map.usun '/delete', :controller => 'terminarzs', :action => 'usun'
+  map.pokaz_wszystkie '/all', :controller => 'news', :action => 'index'
+  map.new '/add_news', :controller => 'news', :action => 'new'
+  map.edit '/edit', :controller => 'news', :action => 'edit'
+  map.show '/show', :controller => 'news', :action => 'show'
+  map.kontakt '/kontakt', :controller => 'main_page', :action => 'kontakt'
+  map.media '/media', :controller => 'main_page', :action => 'media'
+  map.about '/about', :controller => 'main_page', :action => 'oklubie'
+  map.shop '/shop', :controller => 'main_page', :action => 'sklep'
+  map.calendar '/calendar', :controller => 'main_page', :action => 'calendar'
+ 
 end

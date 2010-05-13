@@ -1,27 +1,15 @@
 <% content_for :leftmenu do %>
-	<%= link_to "wszystkie", {:controller=>"news"} %><br/>
-	<%= link_to "dodaj", {:controller=>"news", :action=>"new"} %><br/>
+	<li><%= link_to "Pokaż wszystkie", pokaz_wszystkie_url %>
+	<li><%= link_to "Dodaj newsa", new_url %><br/>
 <% end %>
 
-<h1>Listing news</h1>
+<span class="head">Wszystkie newsy:</span><br><br>
 
 <table>
-  <tr>
-    <th>Tytul</th>
-    <th>Tresc</th>
-    <th>Dodane</th>
-  </tr>
-
 <% @news.each do |news| %>
-  <tr>
-    <td><%=h news.tytul %></td>
-    <td><%=h news.tresc %></td>
-    <td><%=h news.dodane %></td>
-    <td><%= link_to 'Show', news %></td>
-    <td><%= link_to 'Edit', edit_news_path(news) %></td>
-    <td><%= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <tr><td class="news_data"><%=h news.dodane %> || <%=h news.tytul %>
+  <tr><td class="news_tresc"><%=h news.tresc %>  
+  <tr><td class="news_actions"><%= link_to 'Show', news %> || <%= link_to 'Edit', edit_news_path(news) %> || <%= link_to 'Delete', news, :confirm => 'Are you sure?', :method => :delete %>
 <% end %>
 </table>
 
-<br />
