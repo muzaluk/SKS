@@ -4,7 +4,7 @@ class NewsController < ApplicationController
   # GET /news
   # GET /news.xml
   def index
-    @news = News.all
+    @news = News.all(:order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,6 +26,7 @@ class NewsController < ApplicationController
   # GET /news/new
   # GET /news/new.xml
   def new
+	@data = Date.current
     @news = News.new
 
     respond_to do |format|
@@ -42,8 +43,9 @@ class NewsController < ApplicationController
   # POST /news
   # POST /news.xml
   def create
+	@data = Date.current
     @news = News.new(params[:news])
-
+	@news.dodane = @data
     respond_to do |format|
       if @news.save
         flash[:notice] = 'News was successfully created.'

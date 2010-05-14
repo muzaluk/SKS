@@ -2,26 +2,18 @@
 	<li><%= link_to "Pokaż wszystkie", pokaz_wszystkie_path %><br/>
 	<li><%= link_to "Dodaj newsa", new_path %><br/>
 <% end %>
-<h1>New news</h1>
+<span class="head">Nowy news</span><br><br>
 
 <% form_for(:news, :url => news_index_url) do |f| %>
   <%= f.error_messages %>
-
+  
+  <table>
+  <tr><td class="news_data"><%= @data %> || <%= f.text_field :tytul, :size => '23' %>
+  <tr><td class="news_tresc"><%= f.text_area(:tresc, :size => "30x10") %> 
+</table>
   <p>
-    <%= f.label :tytul %><br />
-    <%= f.text_field :tytul %>
-  </p>
-  <p>
-    <%= f.label :tresc %><br />
-    <%= f.text_field :tresc %>
-  </p>
-  <p>
-    <%= f.label :dodane %><br />
-    <%= f.date_select :dodane %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create' %> || <%= link_to 'Back', news_index_path %>
   </p>
 <% end %>
 
-<%= link_to 'Back', news_index_path %>
+

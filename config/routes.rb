@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
-   map.connect 'terminarzs/:id', :controller => 'terminarzs', :action => 'edytuj'
+   #map.connect 'terminarzs/:id', :controller => 'terminarzs', :action => 'edytuj'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

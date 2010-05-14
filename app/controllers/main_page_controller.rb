@@ -1,6 +1,6 @@
 class MainPageController < ApplicationController
   def index
-    @newsy = News.find(:all)
+    @newsy = News.all(:order => 'created_at DESC')
   end
   
   def oklubie
@@ -10,7 +10,7 @@ class MainPageController < ApplicationController
   end 
   
   def calendar
-	@terminy = Terminarz.all
+	@terminy = Terminarz.all(:order => 'created_at DESC')
   end
   
   def media

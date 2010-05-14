@@ -2,21 +2,13 @@
 	<li><%= link_to "Pokaż wszystkie", pokaz_wszystkie_path %><br/>
 	<li><%= link_to "Dodaj newsa", new_path %><br/>
 <% end %>
-<p>
-  <b>Tytul:</b>
-  <%=h @news.tytul %>
-</p>
 
-<p>
-  <b>Tresc:</b>
-  <%=h @news.tresc %>
-</p>
+<span class="head">Podgląd newsa</span><br><br>
 
-<p>
-  <b>Dodane:</b>
-  <%=h @news.dodane %>
-</p>
+  <table>
+  <tr><td class="news_data"><%=h @news.dodane %> || <%=h @news.tytul %>
+  <tr><td class="news_tresc"><%=h @news.tresc %>
+</table>
 
+<%= link_to 'Edit', edit_news_path(@news) %> || <%= link_to 'Back', news_index_path %>
 
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>

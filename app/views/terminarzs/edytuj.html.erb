@@ -2,3 +2,22 @@
 	<li><%= link_to "Pokaż wszystkie", wszystkie_path %><br/>
 	<li><%= link_to "Dodaj termin", dodaj_path%><br/>
 <% end %>
+
+<span class="head">Edycja terminu</span><br><br>
+
+	<% form_for(@termin) do |f| %>  
+	<%= f.error_messages %>
+
+<table class="wyniki">
+	<caption class="head"><%= f.date_select :data_spotkania %><caption>
+	<tbody>
+		<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
+		<tr class="wyniki"><td class="goscie"> <%= f.text_field :goscie %> <td class="gole"> <%= f.text_field :wynik %> <td class="gospodarze"> <%= f.text_field :gospodarze %>
+	</tbody>
+</table>
+ 
+    <br><%= f.submit 'Update', :action => 'update' %> || <%= link_to 'Back', wszystkie_path %>
+	<% end %>
+
+
+
