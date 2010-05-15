@@ -9,7 +9,7 @@
 	<caption class="head"><%= termin.date_select :data_spotkania %><caption>
 	<tbody>
 		<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
-		<tr class="wyniki"><td class="goscie"> <%= termin.text_field :goscie %> <td class="gole"> <%= termin.text_field :wynik %> <td class="gospodarze"> <%= termin.text_field :gospodarze %>
+		<tr class="wyniki"><td class="goscie"> <%= termin.text_field :goscie, :size => "20" %> <td class="gole"> <%= termin.text_field :wynik, :size => "5" %> <td class="gospodarze"> <%= termin.text_field :gospodarze, :size => "20" %>
 	</tbody>
 </table>
       <%= submit_tag 'Zapisz', :action => 'zapisz' %>

@@ -22870,3 +22870,342 @@ Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-14 22:14:15)
 Rendering template within layouts/admin
 Rendering terminarzs/wszystkie
 Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/showall]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateNews (20100411173238)
+Migrating to CreateUsers (20100411182732)
+Migrating to CreateTerminarzs (20100512170731)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("news")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("terminarzs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-15 11:36:52) [GET]
+  [4;36;1mNews Load (0.8ms)[0m   [0;1mSELECT * FROM "news" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 35ms (View: 29, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-15 11:36:57) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-15 11:36:58) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-15 11:36:58) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#process_login (for 127.0.0.1 at 2010-05-15 11:37:07) [POST]
+  Parameters: {"commit"=>"Zaloguj", "authenticity_token"=>"5PCuVMa8aWc1d9vzCnmRvag9w6PSPAgPUfEGYj6/2T4=", "user"=>{"username"=>"pawel", "password"=>"pawel"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = 'pawel' AND "users"."username" = 'pawel') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login?username=pawel
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/user/process_login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-15 11:37:07) [GET]
+  Parameters: {"username"=>"pawel"}
+Rendering template within layouts/application
+Rendering user/login
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/user/login?username=pawel]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-15 11:37:07) [GET]
+  Parameters: {"id"=>"script"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#process_login (for 127.0.0.1 at 2010-05-15 11:37:16) [POST]
+  Parameters: {"commit"=>"Zaloguj", "authenticity_token"=>"5PCuVMa8aWc1d9vzCnmRvag9w6PSPAgPUfEGYj6/2T4=", "user"=>{"username"=>"lukasz", "password"=>"lukasz"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = 'lukasz' AND "users"."username" = 'lukasz') LIMIT 1[0m
+Redirected to http://localhost:3000/user/my_account
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/user/process_login]
+
+
+Processing UserController#my_account (for 127.0.0.1 at 2010-05-15 11:37:16) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering user/my_account
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/user/my_account]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-15 11:37:16) [GET]
+  Parameters: {"id"=>"script"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-15 11:37:18) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mTerminarz Load (0.5ms)[0m   [0mSELECT * FROM "terminarzs" ORDER BY created_at DESC[0m
+Rendering template within layouts/admin
+Rendering terminarzs/wszystkie
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/showall]
+
+
+Processing TerminarzsController#dodaj (for 127.0.0.1 at 2010-05-15 11:37:20) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/dodaj
+Completed in 167ms (View: 157, DB: 0) | 200 OK [http://localhost/add_term]
+
+
+Processing TerminarzsController#zapisz (for 127.0.0.1 at 2010-05-15 11:39:34) [POST]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"5PCuVMa8aWc1d9vzCnmRvag9w6PSPAgPUfEGYj6/2T4=", "terminarz"=>{"goscie"=>"Pomorskie Kopyto FC", "gospodarze"=>"Wiejskie Orły Pruszcz", "data_spotkania(1i)"=>"2010", "wynik"=>"2:1", "data_spotkania(2i)"=>"5", "data_spotkania(3i)"=>"15"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mTerminarz Create (0.5ms)[0m   [0;1mINSERT INTO "terminarzs" ("goscie", "created_at", "data_spotkania", "updated_at", "gospodarze", "wynik") VALUES(NULL, '2010-05-15 09:39:34', NULL, '2010-05-15 09:39:34', NULL, NULL)[0m
+Redirected to http://localhost:3000/showall
+Completed in 147ms (DB: 1) | 302 Found [http://localhost/terminarzs/zapisz]
+
+
+Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-15 11:39:34) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mTerminarz Load (0.6ms)[0m   [0;1mSELECT * FROM "terminarzs" ORDER BY created_at DESC[0m
+Rendering template within layouts/admin
+Rendering terminarzs/wszystkie
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/showall]
+
+
+Processing TerminarzsController#edytuj (for 127.0.0.1 at 2010-05-15 11:39:47) [GET]
+  Parameters: {"id"=>"31"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mTerminarz Load (0.3ms)[0m   [0;1mSELECT * FROM "terminarzs" WHERE ("terminarzs"."id" = 31) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/edytuj
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/terminarzs/edytuj/31]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 11:39:47) [GET]
+
+ActionController::RoutingError (No route matches "/terminarzs/edytuj/javascripts/script.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-15 11:39:52) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mTerminarz Load (0.8ms)[0m   [0;1mSELECT * FROM "terminarzs" ORDER BY created_at DESC[0m
+Rendering template within layouts/admin
+Rendering terminarzs/wszystkie
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/showall]
+
+
+Processing TerminarzsController#usun (for 127.0.0.1 at 2010-05-15 11:39:54) [GET]
+  Parameters: {"confirm"=>"Jesteś pewien?", "id"=>"31"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mTerminarz Load (0.2ms)[0m   [0;1mSELECT * FROM "terminarzs" WHERE ("terminarzs"."id" = 31) [0m
+  [4;35;1mTerminarz Destroy (0.3ms)[0m   [0mDELETE FROM "terminarzs" WHERE "id" = 31[0m
+Redirected to http://localhost:3000/showall
+Completed in 124ms (DB: 1) | 302 Found [http://localhost/terminarzs/usun/31?confirm=Jeste%C5%9B+pewien%3F]
+
+
+Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-15 11:39:55) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mTerminarz Load (0.6ms)[0m   [0mSELECT * FROM "terminarzs" ORDER BY created_at DESC[0m
+Rendering template within layouts/admin
+Rendering terminarzs/wszystkie
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/showall]
+
+
+Processing TerminarzsController#dodaj (for 127.0.0.1 at 2010-05-15 11:39:59) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/dodaj
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://localhost/add_term]
+
+
+Processing TerminarzsController#dodaj (for 127.0.0.1 at 2010-05-15 11:41:03) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/dodaj
+Completed in 93ms (View: 73, DB: 0) | 200 OK [http://localhost/add_term]
+
+
+Processing TerminarzsController#dodaj (for 127.0.0.1 at 2010-05-15 11:42:28) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/dodaj
+Completed in 91ms (View: 71, DB: 0) | 200 OK [http://localhost/add_term]
+
+
+Processing TerminarzsController#dodaj (for 127.0.0.1 at 2010-05-15 11:42:29) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/dodaj
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://localhost/add_term]
+
+
+Processing TerminarzsController#zapisz (for 127.0.0.1 at 2010-05-15 11:42:51) [POST]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"5PCuVMa8aWc1d9vzCnmRvag9w6PSPAgPUfEGYj6/2T4=", "terminarz"=>{"goscie"=>"Pomorskie Kopyto FC", "gospodarze"=>"Wiejskie Orły Pruszcz", "data_spotkania(1i)"=>"2010", "wynik"=>"2:1", "data_spotkania(2i)"=>"5", "data_spotkania(3i)"=>"15"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mTerminarz Create (0.4ms)[0m   [0mINSERT INTO "terminarzs" ("goscie", "created_at", "data_spotkania", "updated_at", "gospodarze", "wynik") VALUES(NULL, '2010-05-15 09:42:51', NULL, '2010-05-15 09:42:51', NULL, NULL)[0m
+Redirected to http://localhost:3000/showall
+Completed in 123ms (DB: 1) | 302 Found [http://localhost/terminarzs/zapisz]
+
+
+Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-15 11:42:51) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mTerminarz Load (0.6ms)[0m   [0mSELECT * FROM "terminarzs" ORDER BY created_at DESC[0m
+Rendering template within layouts/admin
+Rendering terminarzs/wszystkie
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/showall]
+
+
+Processing MainPageController#index (for 127.0.0.1 at 2010-05-15 11:45:29) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mNews Load (0.8ms)[0m   [0mSELECT * FROM "news" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering main_page/index
+Completed in 41ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-05-15 11:45:31) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Redirected to http://localhost:3001/user/login
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/user]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-05-15 11:45:31) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/login
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-15 11:45:31) [GET]
+  Parameters: {"id"=>"script"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#process_login (for 127.0.0.1 at 2010-05-15 11:45:39) [POST]
+  Parameters: {"commit"=>"Zaloguj", "authenticity_token"=>"5PCuVMa8aWc1d9vzCnmRvag9w6PSPAgPUfEGYj6/2T4=", "user"=>{"username"=>"pawel", "password"=>"qazxsw1"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'pawel' AND "users"."password" = 'qazxsw1') LIMIT 1[0m
+Redirected to http://localhost:3001/user/my_account
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/user/process_login]
+
+
+Processing UserController#my_account (for 127.0.0.1 at 2010-05-15 11:45:39) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering user/my_account
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/user/my_account]
+
+
+Processing UserController#javascripts to js (for 127.0.0.1 at 2010-05-15 11:45:39) [GET]
+  Parameters: {"id"=>"script"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: access_denied, index, login, login_required, logout, my_account, process_login, and set_user):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TerminarzsController#wszystkie (for 127.0.0.1 at 2010-05-15 11:45:43) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mTerminarz Load (0.6ms)[0m   [0mSELECT * FROM "terminarzs" ORDER BY created_at DESC[0m
+Rendering template within layouts/admin
+Rendering terminarzs/wszystkie
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/showall]
+
+
+Processing TerminarzsController#dodaj (for 127.0.0.1 at 2010-05-15 11:45:47) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/admin
+Rendering terminarzs/dodaj
+Completed in 111ms (View: 64, DB: 0) | 200 OK [http://localhost/add_term]
