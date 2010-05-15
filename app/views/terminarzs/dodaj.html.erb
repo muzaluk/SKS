@@ -4,7 +4,13 @@
 <% end %>
 <span class="head">Dodaj termin:</span><br><br>
 
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+<% end %>
+
 <% form_for(:terminarz, :url => {:action => 'zapisz'}) do |termin| %>
+	<%= termin.error_messages %>
+
 <table class="wyniki">
 	<caption class="head"><%= termin.date_select :data_spotkania %><caption>
 	<tbody>

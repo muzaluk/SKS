@@ -10,11 +10,18 @@ class TerminarzsController < ApplicationController
 	end
 	
 	def zapisz
-		Terminarz.create(params[:terminarz])
-		redirect_to(wszystkie_path)
+		@termin = Terminarz.new(params[:terminarz])
+			if @termin.goscie == @termin.gospodarze 
+					redirect_to(dodaj_path)	
+			else
+					@termin.save
+					redirect_to(wszystkie_path)
+			end
 	end
+	
 	def edytuj
 		@termin = Terminarz.find(params[:id])
+		
 	end
 	
 	def update
@@ -22,7 +29,7 @@ class TerminarzsController < ApplicationController
 		if @termin.update_attributes(params[:terminarz])
 		   redirect_to(wszystkie_path)
 		else
-			redirect_to(action => 'edytuj', id => params[id])
+			redirect_to(:action => 'edytuj' )
 		end
 	end
 	
