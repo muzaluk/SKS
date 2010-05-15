@@ -6,11 +6,11 @@ class TerminarzsController < ApplicationController
 	end
 	
 	def dodaj
-		@termin = Terminarz.new(params[:termin])
+		@termin = Terminarz.new(params[:terminarz])
 	end
 	
 	def zapisz
-		Terminarz.create(params[:termin])
+		Terminarz.create(params[:terminarz])
 		redirect_to(wszystkie_path)
 	end
 	def edytuj
@@ -19,7 +19,7 @@ class TerminarzsController < ApplicationController
 	
 	def update
 		@termin = Terminarz.find(params[:id])
-		if @termin.update_attributes(params[:termin])
+		if @termin.update_attributes(params[:terminarz])
 		   redirect_to(wszystkie_path)
 		else
 			redirect_to(action => 'edytuj', id => params[id])

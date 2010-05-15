@@ -12,7 +12,7 @@
 	<caption class="head"><%= f.date_select :data_spotkania %><caption>
 	<tbody>
 		<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
-		<tr class="wyniki"><td class="goscie"> <%= f.text_field :goscie %> <td class="gole"> <%= f.text_field :wynik %> <td class="gospodarze"> <%= f.text_field :gospodarze %>
+		<tr class="wyniki"><td class="goscie"> <%= f.text_field :goscie, :size => "20" %> <td class="gole"> <%= f.text_field :wynik, :size => "5" %> <td class="gospodarze"> <%= f.text_field :gospodarze, :size => "20" %>
 	</tbody>
 </table>
  
