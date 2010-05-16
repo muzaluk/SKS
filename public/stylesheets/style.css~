@@ -73,7 +73,7 @@ body
   left: 0;
   width: 39px;
   height: 39px;
-  background-../image: url('/images/Sheet-s.png');
+  background-image: url('../images/Sheet-s.png');
 }
 
 .Sheet-tr
@@ -95,7 +95,7 @@ body
   left: -39px;
   width: 78px;
   height: 78px;
-  background-../image: url('../images/Sheet-s.png');
+  background-image: url('../images/Sheet-s.png');
 }
 
 .Sheet-bl
@@ -117,7 +117,7 @@ body
   left: 0;
   width: 78px;
   height: 78px;
-  background-../image: url('../images/Sheet-s.png');
+  background-image: url('../images/Sheet-s.png');
 }
 
 .Sheet-br
@@ -139,7 +139,7 @@ body
   left: -39px;
   width: 78px;
   height: 78px;
-  background-../image: url('../images/Sheet-s.png');
+  background-image: url('../images/Sheet-s.png');
 }
 
 .Sheet-tc
@@ -161,7 +161,7 @@ body
   left: 0;
   width: 100%;
   height: 78px;
-  background-../image: url('../images/Sheet-h.png');
+  background-image: url('../images/Sheet-h.png');
 }
 
 .Sheet-bc
@@ -183,7 +183,7 @@ body
   left: 0;
   width: 100%;
   height: 78px;
-  background-../image: url('../images/Sheet-h.png');
+  background-image: url('../images/Sheet-h.png');
 }
 
 .Sheet-cl
@@ -205,7 +205,7 @@ body
   left: 0;
   width: 78px;
   height: 100%;
-  background-../image: url('../images/Sheet-v.png');
+  background-image: url('../images/Sheet-v.png');
 }
 
 .Sheet-cr
@@ -227,7 +227,7 @@ body
   left: -39px;
   width: 78px;
   height: 100%;
-  background-../image: url('../images/Sheet-v.png');
+  background-image: url('../images/Sheet-v.png');
 }
 
 .Sheet-cc
@@ -239,7 +239,7 @@ body
   left: 39px;
   right: 39px;
   bottom: 39px;
-  background-../image: url('../images/Sheet-c.png');
+  background-image: url('../images/Sheet-c.png');
 }
 
 
@@ -267,7 +267,7 @@ div.Header-png
   left: 0;
   width: 986px;
   height: 225px;
-  background-../image: url('../images/Header.png');
+  background-image: url('../images/Header.png');
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -281,7 +281,7 @@ div.Header-jpeg
   left: 0;
   width: 986px;
   height: 225px;
-  background-../image: url('../images/Header.jpg');
+  background-image: url('../images/Header.jpg');
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -412,7 +412,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 
 .artmenu ul
 {
-  background-../image: url(../images/spacer.gif);
+  background-image: url(../images/spacer.gif);
   padding: 10px 30px 30px 30px;
   margin: -10px 0 0 -30px;
 }
@@ -475,7 +475,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 {
   background-position: left top;
   background-repeat: no-repeat;
-  background-../image: url('../images/nav.png');
+  background-image: url('../images/nav.png');
 }
 
 /* end Menu */
@@ -503,14 +503,14 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 }
 .artmenu a
 {
-  background-../image: url('../images/item-left.png');
+  background-image: url('../images/item-left.png');
   background-position: left top;
   background-repeat: no-repeat;
 }
 
 .artmenu a span
 {
-  background-../image: url('../images/item-right.png');
+  background-image: url('../images/item-right.png');
   background-position: right top;
   background-repeat: no-repeat;
 }
@@ -523,7 +523,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   margin: 0 4px;
   line-height: 30px;
   text-align: center;
-  background-../image: url('../images/item-center.png');
+  background-image: url('../images/item-center.png');
   background-position: left top;
   background-repeat: repeat-x;
 
@@ -618,7 +618,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: 0;
   width: 7px;
   height: 7px;
-  background-../image: url('../images/Block-s.png');
+  background-image: url('../images/Block-s.png');
 }
 
 .Block-tr
@@ -640,7 +640,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: -7px;
   width: 14px;
   height: 14px;
-  background-../image: url('../images/Block-s.png');
+  background-image: url('../images/Block-s.png');
 }
 
 .Block-bl
@@ -662,7 +662,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: 0;
   width: 14px;
   height: 14px;
-  background-../image: url('../images/Block-s.png');
+  background-image: url('../images/Block-s.png');
 }
 
 .Block-br
@@ -684,7 +684,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: -7px;
   width: 14px;
   height: 14px;
-  background-../image: url('../images/Block-s.png');
+  background-image: url('../images/Block-s.png');
 }
 
 .Block-tc
@@ -706,7 +706,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: 0;
   width: 100%;
   height: 14px;
-  background-../image: url('../images/Block-h.png');
+  background-image: url('../images/Block-h.png');
 }
 
 .Block-bc
@@ -728,7 +728,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: 0;
   width: 100%;
   height: 14px;
-  background-../image: url('../images/Block-h.png');
+  background-image: url('../images/Block-h.png');
 }
 
 .Block-cl
@@ -750,7 +750,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: 0;
   width: 14px;
   height: 100%;
-  background-../image: url('../images/Block-v.png');
+  background-image: url('../images/Block-v.png');
 }
 
 .Block-cr
@@ -772,7 +772,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: -7px;
   width: 14px;
   height: 100%;
-  background-../image: url('../images/Block-v.png');
+  background-image: url('../images/Block-v.png');
 }
 
 .Block-cc
@@ -784,7 +784,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
   left: 7px;
   right: 7px;
   bottom: 7px;
-  background-../image: url('../images/Block-c.png');
+  background-image: url('../images/Block-c.png');
 }
 
 
@@ -852,7 +852,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 {
   background-position: left top;
   background-repeat: no-repeat;
-  background-../image: url('../images/BlockHeader.png');
+  background-image: url('../images/BlockHeader.png');
 }
 
 
@@ -861,7 +861,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 {
   display:inline-block;
   background-position:left top;
-  background-../image: url('../images/BlockHeaderIcon.png');
+  background-image: url('../images/BlockHeaderIcon.png');
   padding:0 0 0 21px;
   background-repeat: no-repeat;
   min-height: 14px;
@@ -938,7 +938,7 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 .BlockContent-body ul li
 {
   padding:0px 0 0px 13px;
-  background-../image: url('../images/BlockContentBullets.png');
+  background-image: url('../images/BlockContentBullets.png');
   background-repeat:no-repeat;
   margin:0.5em 0 0.5em 0;
   line-height:1.2em;
@@ -1118,7 +1118,7 @@ a:link
 {
   font-family: Arial, Helvetica, Sans-Serif;
   text-decoration: none;
-  color: #4D8844;
+  color: black;
 }
 
 /* Adds special style to a visited link. */
@@ -1126,7 +1126,7 @@ a:visited, a.visited
 {
   font-family: Arial, Helvetica, Sans-Serif;
   text-decoration: none;
-  color: #174F26;
+  color: black;
 }
 
 /* :hover - adds special style to an element when you mouse over it. */
@@ -1219,7 +1219,7 @@ li
 .Post ul li
 {
   padding:0px 0 0px 13px;
-  background-../image: url('../images/PostBullets.png');
+  background-image: url('../images/PostBullets.png');
   background-repeat:no-repeat;
   margin:0.5em 0 0.5em 0;
   line-height:1.2em;
@@ -1249,7 +1249,7 @@ blockquote
 
   background-color:#9AC892;
 
-  background-../image:url('../images/PostQuote.png');
+  background-image:url('../images/PostQuote.png');
   background-position:left top;
   background-repeat:no-repeat;
 }
@@ -1389,7 +1389,7 @@ input, select
 
 .Button .l, .Button .r span
 {
-  background-../image: url('../images/Button.png');
+  background-image: url('../images/Button.png');
 }
 
 /* end Button */
@@ -1418,7 +1418,7 @@ input, select
   position:absolute;
   z-index:-1;
   background-repeat:no-repeat;
-  background-../image: url('../images/Footer.png');
+  background-image: url('../images/Footer.png');
   width: 986px;
   height: 100px;
   bottom:0;
@@ -1432,7 +1432,7 @@ input, select
   position: relative;
   display:block;
   float:left;
-  background-../image: url('../images/rssIcon.png');
+  background-image: url('../images/rssIcon.png');
   background-position: center right;
   background-repeat: no-repeat;
   margin: 0 5px 0 0;
@@ -1530,4 +1530,144 @@ input, select
 
 /* end LayoutCell */
 
+/* LEFT MENU */	
+ul.leftmenu a:link
+{
+	color: black;
+	text-decoration: none;
+}
+ul.leftmenu a:visited
+{
+	color: black;
+	text-decoration: none;
+}
+ul.leftmenu a:hover
+{
+	color: green;
+	text-decoration: none;
+}
 
+/*  END */
+.news_data{
+	width: 100px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	padding: 10px;
+	margin: 10px;
+	border-style: none;
+	border-width: 2px;
+	border-color: black;
+}
+.news_tresc{
+	font-size: 12px;
+	color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-color: green;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: left;
+}
+.head{
+	font-size: 25px;
+	color: white;
+	border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: black;
+	padding: 10px;
+	margin: 15px;
+	font-weight: bold;
+}
+td.news_actions{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+.zaokraglone{
+	border-radius: 10px;
+}
+caption.terminy{
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: italic;
+	padding: 10px;
+	color: black;
+}
+tr.wyniki{
+	width: 100%;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: green;
+	border-radius: 10px;
+	border-collapse: collapse;
+}
+tr.wyniki td{
+	width: 250px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: green;
+	border-collapse: collapse;
+	padding: 10px;
+	font-weight: bold;
+}
+tr.wyniki td.gole{
+	color: orange;
+	font-weight: bold;
+}
+tr.wyniki td.goscie{
+	color: red;
+	font-weight: bold;
+}
+tr.wyniki td.gospodarze{
+	color: blue;
+	font-weight: bold;
+}
+table.wyniki{
+	border-collapse: collapse;
+}
+table.team a:link{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+table.team a:visited{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+table.team a:hover{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+table.team{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 15px;
+}
+table.team tr:hover{
+	background-color: black;
+	color: white;
+
+}
+
+#login li
+{
+	list-style-type: none;
+}

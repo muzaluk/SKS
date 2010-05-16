@@ -13,7 +13,7 @@ class UserController < ApplicationController
       session[:id] = user.id #remeber the user's id during this session
       redirect_to session[:return_to] || '/user/my_account'
     else
-      flash[:error] = 'Invalid login.'
+      flash[:error] = 'Nieprawidłowy login lub hasło.'
       redirect_to :action => 'login', :username => params[:user][:username]
     end
   end

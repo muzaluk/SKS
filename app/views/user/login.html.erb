@@ -1,5 +1,10 @@
 <% form_tag :action => 'process_login' do -%>
-   Login: <%= text_field "user", "username" %>
-   Haslo: <%= password_field "user", "password" %>
-   <%= submit_tag 'Zaloguj' %>
+<ul id="login">
+   <li>Login: <%= text_field "user", "username" %>
+   <li>Hasło: <%= password_field "user", "password" %>
+   <li><%= submit_tag 'Zaloguj' %>
+<% if flash[:error] %>
+   <li><%= flash[:error] %>
+<% end %>
+</ul>
 <% end -%>

@@ -1666,3 +1666,8 @@ table.team tr:hover{
 	color: white;
 
 }
+
+#login li
+{
+	background-image: none;
+}

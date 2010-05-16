@@ -1,3 +1,7 @@
+<% content_for :leftmenu do %>
+	<li><%= link_to "Wszyscy zawdonicy", players_all_url %>
+	<li><%= link_to "Dodaj zawodnika", players_new_url %><br/>
+<% end %>
 <p>
   <b>Imię i Nazwisko:</b>
   <%=h @player.name %>
