@@ -1635,6 +1635,34 @@ tr.wyniki td.gospodarze{
 table.wyniki{
 	border-collapse: collapse;
 }
-.form{
-	background-color:
+table.team a:link{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+table.team a:visited{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+table.team a:hover{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+table.team{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 15px;
+}
+table.team tr:hover{
+	background-color: black;
+	color: white;
+
 }

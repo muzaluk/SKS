@@ -13,9 +13,10 @@ class TerminarzsController < ApplicationController
 		@termin = Terminarz.new(params[:terminarz])
 			if @termin.goscie == @termin.gospodarze 
 					redirect_to(dodaj_path)	
-			else
-					@termin.save
+			elsif @termin.save
 					redirect_to(wszystkie_path)
+			else
+					redirect_to(dodaj_path)
 			end
 	end
 	
