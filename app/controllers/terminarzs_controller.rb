@@ -1,11 +1,13 @@
 class TerminarzsController < ApplicationController
 	layout "admin"
-	before_filter :login_required, :only => [:wszystkie, :dodaj, :edytuj, :destroy]
-	def wszystkie
+	before_filter :login_required, :only => [:index, :new, :edit, :destroy]
+	# GET /terminarzs
+	# GET /terminarzs.xml
+	def index
 		@termin = Terminarz.all(:order => 'created_at DESC')
 	end
 	
-	def dodaj
+	def new
 		@termin = Terminarz.new(params[:terminarz])
 	end
 	
@@ -20,7 +22,7 @@ class TerminarzsController < ApplicationController
 			end
 	end
 	
-	def edytuj
+	def edit
 		@termin = Terminarz.find(params[:id])
 		
 	end

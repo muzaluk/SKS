@@ -1,0 +1,16 @@
+<% content_for :leftmenu do %>
+	<li><%= link_to "Pokaż wszystkie", wszystkie_path %><br/>
+	<li><%= link_to "Dodaj termin", dodaj_path%><br/>
+<% end %>
+
+<% @termin.each do |termin| %>
+	<table class="wyniki">
+	<caption class="head"><%= termin.data_spotkania %><caption>
+	<tbody>
+	<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
+	<tr class="wyniki"><td class="goscie"> <%= termin.goscie %> <td class="gole"> <%= termin.wynik %> <td class="gospodarze"> <%= termin.gospodarze %>
+	<tr><td class="news_actions"><%= link_to 'Edit', :action => 'edit', :id => termin %> || <%= link_to 'Delete',:action => 'usun', :id => termin , :confirm => 'Jesteś pewien?'%>
+	</tbody>
+	</table>
+	<br><br>
+<% end %>

@@ -39,10 +39,10 @@
                 </div>
                 <div class="nav">
                     <ul class="artmenu">
-						 <li><%= link_to "<span><span>Strona główna</span></span>", root_path %></li>
-                        <li><%= link_to "<span><span>News'y</span></span>", pokaz_wszystkie_path %></li>
-                        <li><%= link_to "<span><span>Zawodnicy</span></span>", players_all_path %></li>
-                        <li><%= link_to "<span><span>Terminarz</span></span>", wszystkie_path %></li>
+			<li><%= link_to "<span><span>Strona główna</span></span>", root_path %></li>
+                        <li><%= activeLink "<span><span>News'y</span></span>", {:controller=>"news", :action=>"index"} %></li>
+                        <li><%= activeLink "<span><span>Zawodnicy</span></span>", {:controller=>"players", :action=>"index"} %></li>
+                        <li><%= activeLink "<span><span>Terminarz</span></span>", {:controller=>"terminarzs", :action=>"index"} %></li>
                     </ul>
                     <div class="l">
                     </div>

@@ -46,9 +46,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.root :controller => "MainPage"
-  map.wszystkie '/showall', :controller => 'terminarzs', :action => 'wszystkie'
-  map.edytuj '/edit', :controller => 'terminarzs', :action => 'edytuj'
-  map.dodaj '/add_term', :controller => 'terminarzs', :action => 'dodaj'
+  map.wszystkie '/showall', :controller => 'terminarzs', :action => 'index'
+  map.edytuj '/edit', :controller => 'terminarzs', :action => 'edit'
+  map.dodaj '/add_term', :controller => 'terminarzs', :action => 'new'
   map.usun '/delete', :controller => 'terminarzs', :action => 'usun'
   map.pokaz_wszystkie '/all', :controller => 'news', :action => 'index'
   map.new '/add_news', :controller => 'news', :action => 'new'
