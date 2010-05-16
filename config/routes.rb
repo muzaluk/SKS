@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :players
+
   map.resources :news
   map.resources :terminarzs
 
@@ -57,5 +59,7 @@ ActionController::Routing::Routes.draw do |map|
   map.about '/about', :controller => 'main_page', :action => 'oklubie'
   map.shop '/shop', :controller => 'main_page', :action => 'sklep'
   map.calendar '/calendar', :controller => 'main_page', :action => 'calendar'
+  map.players_all '/players', :controller => 'players', :action => 'index'
+  map.players_new '/add_player', :controller => 'players', :action => 'new'
  
 end

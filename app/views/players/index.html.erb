@@ -1,0 +1,27 @@
+<% content_for :leftmenu do %>
+	<li><%= link_to "Wszyscy zawdonicy", players_all_url %>
+	<li><%= link_to "Dodaj zawodnika", players_new_url %><br/>
+<% end %>
+<h1>Nasza kadra</h1>
+
+<table>
+  <tr>
+    <th>Imię i Nazwisko</th>
+    <th>Data urodzenia</th>
+    <th>Opis</th>
+    <th>Zdjęcie</th>
+  </tr>
+
+<% @players.each do |player| %>
+  <tr>
+    <td><%=h player.name %></td>
+    <td><%=h player.dateOfBirth %></td>
+    <td><%=h player.description %></td>
+    <td><%=h player.picture %></td>
+    <td><%= link_to 'Pokaż', player %></td>
+    <td><%= link_to 'Edycja', edit_player_path(player) %></td>
+    <td><%= link_to 'Usuń', player, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+

@@ -1,0 +1,23 @@
+<p>
+  <b>Imię i Nazwisko:</b>
+  <%=h @player.name %>
+</p>
+
+<p>
+  <b>Data urodzin:</b>
+  <%=h @player.dateOfBirth %>
+</p>
+
+<p>
+  <b>Opis:</b>
+  <%=h @player.description %>
+</p>
+
+<p>
+  <b>Zdjęcie:</b>
+  <%=h @player.picture %>
+</p>
+
+
+<%= link_to 'Edytuj', edit_player_path(@player) %> |
+<%= link_to 'Powrót', players_path %>

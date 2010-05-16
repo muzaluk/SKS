@@ -1,0 +1,27 @@
+<h1>Nowy zawodnik</h1>
+
+<% form_for(@player) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label("Imię i nazwisko") %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label("Data urodzenia") %><br />
+    <%= f.date_select :dateOfBirth %>
+  </p>
+  <p>
+    <%= f.label("Opis") %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label("Zdjęcie") %><br />
+    <%= f.text_field :picture %>
+  </p>
+  <p>
+    <%= f.submit 'Stwórz' %>
+  </p>
+<% end %>
+
+<%= link_to 'Powrót', players_path %>
