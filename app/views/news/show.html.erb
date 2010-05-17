@@ -1,7 +1,8 @@
 <% content_for :leftmenu do %>
-	<li><%= link_to "Pokaż wszystkie", pokaz_wszystkie_path %><br/>
-	<li><%= link_to "Dodaj newsa", new_path %><br/>
+	<span class="button"><%= link_to "Pokaż wszystkie", pokaz_wszystkie_url %></span><br>
+	<span class="button"><%= link_to "Dodaj newsa", new_url %></span>
 <% end %>
+
 
 <span class="head">Podgląd newsa</span><br><br>
 
@@ -10,5 +11,5 @@
   <tr><td class="news_tresc"><%=h @news.tresc %>
 </table>
 
-<%= link_to 'Edit', edit_news_path(@news) %> || <%= link_to 'Back', news_index_path %>
+<span class="news_actions"><%= link_to 'Edit', edit_news_path(@news) %> || <%= link_to 'Back', news_index_path %></span>
 

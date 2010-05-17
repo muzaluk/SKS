@@ -14,6 +14,7 @@ class TerminarzsController < ApplicationController
 	def zapisz
 		@termin = Terminarz.new(params[:terminarz])
 			if @termin.goscie == @termin.gospodarze 
+					flash[:notice] = "Goście and Gospodarze must be different!!!"
 					redirect_to(dodaj_path)	
 			elsif @termin.save
 					redirect_to(wszystkie_path)

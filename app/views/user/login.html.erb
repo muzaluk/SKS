@@ -1,10 +1,17 @@
+<span class="head">Panel logowania</span>
+<br><br>
+<span class="login">
 <% form_tag :action => 'process_login' do -%>
-<ul id="login">
-   <li>Login: <%= text_field "user", "username" %>
-   <li>Hasło: <%= password_field "user", "password" %>
-   <li><%= submit_tag 'Zaloguj' %>
-<% if flash[:error] %>
-   <li><%= flash[:error] %>
+   Login: <%= text_field "user", "username" %><br>
+   Hasło: <%= password_field "user", "password" %><br>
+   <%= submit_tag 'Zaloguj' %><br>
 <% end %>
-</ul>
-<% end -%>
+</span>
+<br><br><span class="error">
+<% if flash[:error] %>
+   <%= flash[:error] %>
+<% end %>
+</span>
+
+
+

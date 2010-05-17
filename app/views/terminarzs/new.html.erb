@@ -1,22 +1,26 @@
 <% content_for :leftmenu do %>
-	<li><%= link_to "Pokaż wszystkie", wszystkie_path %><br/>
-	<li><%= link_to "Dodaj termin", dodaj_path%><br/>
+	<span class="button"><%= link_to "Pokaż wszystkie", wszystkie_path %></span><br/>
+	<span class="button"><%= link_to "Dodaj termin", dodaj_path%></span>
 <% end %>
-<span class="head">Dodaj termin:</span><br><br>
 
+
+<span class="head">Dodaj termin:</span><br><br>
+<span class="error">
 <% if flash[:notice] %>
 	<%= flash[:notice] %>
 <% end %>
+</span><br><br>
 
 <% form_for(:terminarz, :url => {:action => 'zapisz'}) do |termin| %>
 	<%= termin.error_messages %>
 
 <table class="wyniki">
-	<caption class="head"><%= termin.date_select :data_spotkania %><caption>
+	<caption class="thead"><%= termin.date_select :data_spotkania %><caption>
 	<tbody>
-		<tr class="wyniki"><td>Goście<td>Wynik<td>Gospodarze
+		<tr class="wyniki"><td class="ngoscie">Goście<td class="ngole">Wynik<td class="ngospodarze">Gospodarze
 		<tr class="wyniki"><td class="goscie"> <%= termin.text_field :goscie, :size => "20" %> <td class="gole"> <%= termin.text_field :wynik, :size => "5" %> <td class="gospodarze"> <%= termin.text_field :gospodarze, :size => "20" %>
 	</tbody>
 </table>
       <%= submit_tag 'Zapisz' %>
     <% end %>
+</p>

@@ -1,15 +1,17 @@
 <% content_for :leftmenu do %>
-	<li><%= link_to "Pokaż wszystkie", pokaz_wszystkie_url %>
-	<li><%= link_to "Dodaj newsa", new_url %><br/>
+	<span class="button"><%= link_to "Pokaż wszystkie", pokaz_wszystkie_url %></span><br>
+	<span class="button"><%= link_to "Dodaj newsa", new_url %></span>
 <% end %>
 
 <span class="head">Wszystkie newsy:</span><br><br>
 
-<table>
+
 <% @news.each do |news| %>
+<table>
   <tr><td class="news_data"><%=h news.dodane %> || <%=h news.tytul %>
   <tr><td class="news_tresc"><%=h news.tresc %>  
-  <tr><td class="news_actions"><%= link_to 'Show', news %> || <%= link_to 'Edit', edit_news_path(news) %> || <%= link_to 'Delete', news, :confirm => 'Are you sure?', :method => :delete %>
-<% end %>
 </table>
+  <span class="news_actions"><%= link_to 'Show', news %> || <%= link_to 'Edit', edit_news_path(news) %> || <%= link_to 'Delete', news, :confirm => 'Are you sure?', :method => :delete %></span>
+<% end %>
+
 

@@ -76,10 +76,10 @@
                                 <div class="BlockContent">
                                     <div class="BlockContent-body">
                                         <div>
-                                            <p><ul class="leftmenu">
-                                                <li><%= yield :leftmenu %></li>
-                                                <br><li><%= link_to "Wyloguj", {:controller=>"user", :action=>"logout"} %></li>
-                                            </p></ul>
+                                            <p><span class="leftmenu">
+                                                <%= yield :leftmenu %>
+                                                <br><span class="button"><%= link_to "Wyloguj", {:controller=>"user", :action=>"logout"} %></span>
+                                            </p></span>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@
                             <div class="Post-body">
                         <div class="Post-inner">
                             <h2 class="PostHeaderIcon-wrapper" >
-                                <ul class="leftmenu"><%= yield %></ul>                            
+                                <ul class="leftmenu"><br><%= yield %></ul>                            
                             </h2>
                             <div class="PostContent">    
                                 <table class="table" width="100%">
