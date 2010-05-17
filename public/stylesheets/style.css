@@ -1778,3 +1778,43 @@ span.button a{
 	text-shadow:2px 2px 2px #28E0DA;
 	-webkit-box-shadow: 3px 3px 9px #41D900;
  }
+.dane{
+	color: white;
+	display: block;
+	font-size: 15px;
+	width: auto;
+	height: 160px;
+	padding: 15px;
+	margin: 15px;
+}
+.profil{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 15px;
+	display: block;
+	padding: 15px;
+	margin: 15px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#68CF4E), to(#14B514), color-stop(.6,#333333));
+	-webkit-box-shadow: 3px 3px 9px #41D900;
+}
+img.avatar{
+	padding: 15px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#26FFFF), to(#1F1804), color-stop(.6,#176669));
+	margin: 15px;
+}
+img.avatar:hover{
+	-webkit-transition-delay: initial;
+	-webkit-transform: scale(1.50) rotate(0deg) translate(-37px, -25px) skew(0deg, 0deg); 
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-box-shadow: 3px 3px 9px #41D900;
+	 border-style: solid;
+	 border-width: 2px;
+	 border-color: white;
+}
+.dane_profil{
+	font-weight:bold;
+	text-shadow:2px 2px 2px #28E0DA;	
+}

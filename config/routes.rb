@@ -61,5 +61,6 @@ ActionController::Routing::Routes.draw do |map|
   map.calendar '/calendar', :controller => 'main_page', :action => 'calendar'
   map.players_all '/players', :controller => 'players', :action => 'index'
   map.players_new '/add_player', :controller => 'players', :action => 'new'
+  map.players_show '/show_players', :controller => 'main_page', :action => 'zawodnicy'
  
 end

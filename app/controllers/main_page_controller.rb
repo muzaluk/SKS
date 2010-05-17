@@ -6,6 +6,10 @@ class MainPageController < ApplicationController
   def oklubie
   end
   
+  def zawodnicy
+	@players = Player.all
+  end
+  
   def kontakt
   end 
   
