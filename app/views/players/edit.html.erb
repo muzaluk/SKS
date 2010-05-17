@@ -2,31 +2,27 @@
 	<span class="button"><%= link_to "Wszyscy zawdonicy", players_all_url %></span><br>
 	<span class="button"><%= link_to "Dodaj zawodnika", players_new_url %></span>
 <% end %>
-<h1>Edytuj zawodnika</h1>
+<span class="head">Edycja zawodnika</span><br><br>
 
-<% form_for(@player) do |f| %>
-  <%= f.error_messages %>
+<span class="profil">
+	<% form_for(@player) do |f| %>
+	<%= f.error_messages %>
+	
+	<span class="zhead"><%= f.label("Imię i nazwisko") %></span><br>
+    <%= f.text_field :name %><br>
 
-  <p>
-    <%= f.label("Imię i nazwisko") %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label("Data urodzenia") %><br />
-    <%= f.date_select :dateOfBirth %>
-  </p>
-  <p>
-    <%= f.label("Opis") %><br />
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.label("Zdjęcie") %><br />
-    <%= f.text_field :picture %>
-  </p>
-  <p>
-    <%= f.submit 'Zapisz' %>
-  </p>
-<% end %>
+	<br><span class="zhead"><%= f.label("Data urodzenia") %></span><br>
+    <%= f.text_field :dateOfBirth %>  <span class="help">(eg. 1980-05-20)</span><br>
+    
+    <br><span class="zhead"><%= f.label("Opis") %></span><br>
+    <%= f.text_area :description %><br>
+    
+    <br><span class="zhead"><%= f.label("Zdjęcie") %></span><br>
+    <%= f.text_field :picture %>  <span class="help">(eg. players/player.jpg)</span><br>
 
-<%= link_to 'Pokaż', @player %> |
-<%= link_to 'Powrót', players_path %>
+	 <span class="news_actions zawodnicy_menu"><%= f.submit 'Zapisz' %> || <%= link_to 'Pokaż', @player %> || <%= link_to 'Powrót', players_path %></span><br><br>
+<% end %> 
+</span>
+
+
+  

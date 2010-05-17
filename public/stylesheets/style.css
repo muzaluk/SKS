@@ -1818,3 +1818,66 @@ img.avatar:hover{
 	font-weight:bold;
 	text-shadow:2px 2px 2px #28E0DA;	
 }
+.oklubie{
+	font-family:"Georgia", Times, serif;
+	font-size: 45px;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 15px;
+	text-shadow:2px 2px 2px #28E0DA;
+	background-image: -webkit-gradient(radial, -100 64, 100, 50 44, 625, from(#FCFCFC), to(#0ACF17), color-stop(.6,#85E82E));
+}
+.oklubie_content{
+	font-size: 20px;
+	text-align:justify;
+	color: black;
+}
+.oklubie_head{
+	font-family:"Georgia", Times, serif;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 15px;
+	text-shadow:2px 2px 2px #28E0DA;
+	background-image: -webkit-gradient(radial, -100 64, 100, 50 44, 625, from(#FCFCFC), to(#0ACF17), color-stop(.6,#85E82E));
+}
+div.center{
+	text-align: center;
+}
+.zawodnicy_menu{
+	float: right;
+	display: inline-block;
+}
+.zhead{
+	text-align: center;
+	width: 150px;
+	display: block;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#68CF4E), to(#14B514), color-stop(.6,#333333));
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	text-shadow:2px 2px 2px #28E0DA;
+	-webkit-box-shadow: 3px 3px 9px #41D900;
+ }
+.help{
+	font-size: 13px;
+	color: white;
+}

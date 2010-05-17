@@ -2,26 +2,21 @@
 	<span class="button"><%= link_to "Wszyscy zawdonicy", players_all_url %></span><br>
 	<span class="button"><%= link_to "Dodaj zawodnika", players_new_url %></span>
 <% end %>
-<h1>Nasza kadra</h1>
 
-<table>
-  <tr>
-    <th>Imię i Nazwisko</th>
-    <th>Data urodzenia</th>
-    <th>Opis</th>
-    <th>Zdjęcie</th>
-  </tr>
+<span class="head">Wszyscy zawodnicy</span>
+<br><br>
+<span class="profil">                                                                              
+<% @players.each do |player| %>                                                                               
 
-<% @players.each do |player| %>
-  <tr>
-    <td><%=h player.name %></td>
-    <td><%=h player.dateOfBirth %></td>
-    <td><%=h player.description %></td>
-    <td><%=h player.picture %></td>
-    <td><%= link_to 'Pokaż', player %></td>
-    <td><%= link_to 'Edycja', edit_player_path(player) %></td>
-    <td><%= link_to 'Usuń', player, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+ <img class="avatar" src="<%= player.picture %>", width = "120px", height = "120px", align ="left">
+  <span class="dane"><span class="dane_profil">Imie i nazwisko:</span> <%= player.name %><br>
+					 <span class="dane_profil">Data urodzenia:</span> <%= player.dateOfBirth %><br>
+					 <span class="dane_profil">Opis:</span> <%= player.description %><br>
+					 <span class="news_actions zawodnicy_menu"><%= link_to 'Pokaż', player %> || <%= link_to 'Edycja', edit_player_path(player) %> || <%= link_to 'Usuń', player, :confirm => 'Are you sure?', :method => :delete %></span>
+					</span>
+					
+					
 <% end %>
-</table>
+ </span> 
+
 

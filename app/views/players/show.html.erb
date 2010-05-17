@@ -2,26 +2,17 @@
 	<span class="button"><%= link_to "Wszyscy zawdonicy", players_all_url %></span><br>
 	<span class="button"><%= link_to "Dodaj zawodnika", players_new_url %><span>
 <% end %>
-<p>
-  <b>Imię i Nazwisko:</b>
-  <%=h @player.name %>
-</p>
 
-<p>
-  <b>Data urodzin:</b>
-  <%=h @player.dateOfBirth %>
-</p>
-
-<p>
-  <b>Opis:</b>
-  <%=h @player.description %>
-</p>
-
-<p>
-  <b>Zdjęcie:</b>
-  <%=h @player.picture %>
-</p>
+<span class="head">Nasi zawodnicy</span>
+<br><br>
+<span class="profil">                                                                              
+                                                                              
+ <img class="avatar" src="../<%= @player.picture %>", width = "120px", height = "120px", align ="left">
+  <span class="dane"><span class="dane_profil">Imie i nazwisko:</span> <%= @player.name %><br>
+					 <span class="dane_profil">Data urodzenia:</span> <%= @player.dateOfBirth %><br>
+					 <span class="dane_profil">Opis:</span> <%= @player.description %><br>
+					 <span class="news_actions zawodnicy_menu"><%= link_to 'Edycja', edit_player_path(@player) %> || <%=link_to 'Powrót', players_path %></span>
+	</span>
+ </span> 
 
 
-<%= link_to 'Edytuj', edit_player_path(@player) %> |
-<%= link_to 'Powrót', players_path %>
