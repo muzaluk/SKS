@@ -22,4 +22,9 @@ class MainPageController < ApplicationController
   
   def sklep
   end
+
+  def gadzety
+	@gadgets = Gadget.all
+  end
+
 end

@@ -1,0 +1,21 @@
+<% content_for :leftmenu do %>
+        <span class="button"><%= link_to "Wszystkie gadżety", gadgets_all_url %></span><br>
+        <span class="button"><%= link_to "Dodaj gadżet", gadgets_new_url %></span>
+<% end %>
+
+<span class="head">Gadżety</span>
+<br><br>
+<span class="profil">
+<% @gadgets.each do |gadget| %>
+
+ <img class="avatar" src="<%= gadget.picture %>", width = "120px", height = "120px", align ="left">
+  <span class="dane"><span class="dane_profil">Nazwa:</span> <%= gadget.name %><br>
+                                         <span class="dane_profil">Cena:</span> <%= gadget.price %><br>
+                                         <span class="dane_profil">Opis:</span> <%= gadget.body %><br>
+                                         <span class="news_actions zawodnicy_menu"><%= link_to 'Pokaż', gadget %> || <%= link_to 'Edycja', edit_gadget_path(gadget) %> || <%= link_to 'Usuń', gadget, :confirm => 'Jesteś pewien?', :method => :delete %></span>
+                                         </span>
+
+
+<% end %>
+ </span>
+

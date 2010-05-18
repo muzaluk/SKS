@@ -1,0 +1,16 @@
+<% content_for :leftmenu do %>
+        <span class="button"><%= link_to "Wszystkie gadżety", gadgets_all_url %></span><br>
+        <span class="button"><%= link_to "Dodaj gadżet", gadgets_new_url %><span>
+<% end %>
+
+<span class="head">Gadżety</span>
+<br><br>
+<span class="profil">
+
+ <img class="avatar" src="../<%= @gadget.picture %>", width = "120px", height = "120px", align ="right">										 
+<span class="dane_profil">Nazwa:</span> <%= @gadget.name %><br>
+					 <span class="sklep_cena">Cena:</span> <%= @gadget.price %><br>																				                                     
+                                         <span class="sklep"><span class="sklep_cena">Opis:</span> <%= @gadget.body %><br>                                                                         
+                                         <span class="news_actions zawodnicy_menu"><%= link_to 'Edycja', edit_gadget_path(@gadget) %> || <%=link_to 'Powrót', gadget_path %></span>
+        </span>
+ </span>

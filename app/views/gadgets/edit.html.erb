@@ -1,0 +1,28 @@
+<h1>Edytuj gadżet</h1>
+
+<% form_for(@gadget) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nazwa %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :zdjęcie %><br />
+    <%= f.text_field :picture %>
+  </p>
+  <p>
+    <%= f.label :opis %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :cena %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.submit 'Aktualizuj' %>
+  </p>
+<% end %>
+
+<%= link_to 'Pokaż', @gadget %> |
+<%= link_to 'Cofnij', gadgets_path %>

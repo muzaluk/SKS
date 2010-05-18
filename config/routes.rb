@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :gadgets
+
   map.resources :players
 
   map.resources :news
@@ -62,5 +64,7 @@ ActionController::Routing::Routes.draw do |map|
   map.players_all '/players', :controller => 'players', :action => 'index'
   map.players_new '/add_player', :controller => 'players', :action => 'new'
   map.players_show '/show_players', :controller => 'main_page', :action => 'zawodnicy'
- 
+  map.gadgets_all '/gadgets', :controller => 'gadgets', :action => 'index'
+  map.gadgets_new '/add_gadget', :controller => 'gadgets', :action => 'new'
+  map.gadgets_show '/show_gadgets', :controller => 'main_page', :action => 'gadzety'
 end
