@@ -7,9 +7,9 @@
 <% @gadgets.each do |gadget| %>                                                                               
 
 <img class="avatar" src="<%= gadget.picture %>", width = "120px", height = "120px", align ="right">
-  <span class="dane_profil">Nazwa:</span> <%= gadget.name %><br>
-                                         <span class="dane_profil">Cena:</span> <%= gadget.price %><br>
-                                        <span class="sklep"> <span class="dane_profil">Opis:</span> <%= gadget.body %><br>
+  <span class="sklep_cena">Nazwa:</span><span class="sklep_kolor"> <%= gadget.name %></span><br>
+                                         <span class="sklep_cena">Cena:</span><span class ="sklep_kolor"> <%= gadget.price %></span><br>
+                                        <span class="sklep"> <span class="sklep_cena">Opis:</span> <%= gadget.body %><br>
 
 
 	</span>

@@ -1888,11 +1888,15 @@ div.center{
 	text-align: right;	
 }
 .sklep{
-    color: white;
+    	color: white;
 	display: block;
-	font-size: 15px;
+	font-size: 16px;
 	width: auto;
 	height: 160px;
 	padding: 15px;
 	margin: 15px;
+}
+.sklep_kolor{
+	color: white;
+	text-shadow:2px 2px 2px #28E0DA;
 }
