@@ -1,6 +1,18 @@
 /* begin Page */
 
 /* Generated with Artisteer version 2.0.2.15338 */
+@font-face {
+  font-family: myfont;
+  src: url("myfont.ttf");
+}
+@font-face {
+  font-family: myfont1;
+  src: url("myfont1.ttf");
+}
+@font-face {
+  font-family: myfont2;
+  src: url("myfont2.ttf");
+}
 
 body
 {
@@ -305,12 +317,13 @@ h1.logo-name
 
 h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.logo-name a:hover
 {
-  font-family: Arial, Helvetica, Sans-Serif;
-  font-size: 36px;
+  font-family: myfont;
+  font-size: 46px;
   text-decoration: none;
   padding:0;
   margin:0;
   color: #1B2F18 !important;
+  text-shadow:0px -2px 4px #FFE121, 0px -3px 4px #FF8F2E, 0px -4px 4px #FF470F;
 }
 
 .logo-text
@@ -321,11 +334,12 @@ h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.lo
 
 .logo-text, .logo-text a
 {
-  font-family: Arial, Helvetica, Sans-Serif;
-  font-size: 20px;
+  font-family: myfont1;
+  font-size: 25px;
   padding:0;
   margin:0;
   color: #060A05 !important;
+  text-shadow:0px 0px 10px #12A8FF
 }
 
 /* end Logo */
@@ -1899,4 +1913,55 @@ div.center{
 .sklep_kolor{
 	color: white;
 	text-shadow:2px 2px 2px #28E0DA;
+}
+span.topmenu{
+	display: inline-block;
+}
+span.topmenu a:link{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 4%, 0% 99%, from(#54F21B), to(#185E10), color-stop(.4,#1ABD25));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+}
+span.topmenu a:visited{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 4%, 0% 99%, from(#54F21B), to(#185E10), color-stop(.4,#1ABD25));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+}
+span.topmenu a:hover{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#278C38), to(#1DD900), color-stop(.6,#4DD11D));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: #FFC421;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+	-webkit-box-shadow:0px 0px 10px #FFB70F;
+	text-shadow:2px 2px 5px #199410;
+}
+span.topmenu a.active{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2BA38), to(#473A06), color-stop(.5,#B37E15));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: #33FF1C;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+	text-shadow:2px 2px 5px #77FF00;
+	-webkit-box-shadow:0px 0px 10px  #77FF00;
 }

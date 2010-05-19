@@ -34,18 +34,18 @@
                     </div>
                 </div>
                 <div class="nav">
-                    <ul class="artmenu">
-                        <li><%= activeLink "<span><span>Strona Głowna</span></span>", {:controller=>"main_page", :action=>"index"} %></li>
-                        <li><%= activeLink "<span><span>Terminarz</span></span>", {:controller=>"main_page", :action=>"calendar"} %></li>
-			<li><%= activeLink "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} %></li>
-                        <li><%= activeLink "<span><span>Media</span></span>", {:controller=>"main_page", :action=>"media"} %></li>
-                        <li><%= activeLink "<span><span>Sklep</span></span>", {:controller=>"main_page", :action=>"sklep"} %></li>
-			<li><%= activeLink "<span><span>Kontakt</span></span>", {:controller=>"main_page", :action=>"kontakt"} %></li>
-                    </ul>
+                   <br><span class="topmenu">
+                        <%= activeLink "<span><span>Home</span></span>", {:controller=>"main_page", :action=>"index"} %>
+                        <%= activeLink "<span><span>Terminarz</span></span>", {:controller=>"main_page", :action=>"calendar"} %>
+						<%= activeLink "<span><span>O Klubie</span></span>", {:controller=>"main_page", :action=>"oklubie"} %>
+                        <%= activeLink "<span><span>Media</span></span>", {:controller=>"main_page", :action=>"media"} %>
+                        <%= activeLink "<span><span>Sklep</span></span>", {:controller=>"main_page", :action=>"sklep"} %>
+						<%= activeLink "<span><span>Kontakt</span></span>", {:controller=>"main_page", :action=>"kontakt"} %>
+						</span>
                     <div class="l">
                     </div>
-                    <div class="r">
-                        <div>
+                    <div class="r">         
+                         <div>
                         </div>
                     </div>
                 </div>
