@@ -38,13 +38,13 @@
                     </div>
                 </div>
                 <div class="nav">
-                    <ul class="artmenu">
-			<li><%= link_to "<span><span>Strona główna</span></span>", root_path %></li>
-                        <li><%= activeLink "<span><span>News'y</span></span>", {:controller=>"news", :action=>"index"} %></li>
-                        <li><%= activeLink "<span><span>Zawodnicy</span></span>", {:controller=>"players", :action=>"index"} %></li>
-                        <li><%= activeLink "<span><span>Terminarz</span></span>", {:controller=>"terminarzs", :action=>"index"} %></li>
-                   	<li><%= activeLink "<span><span>Sklep</span></span>", {:controller=>"gadgets", :action=>"index"} %></li>
-		     </ul>
+                    <br><span class="topmenu">
+						<%= link_to "<span><span>Home</span></span>", root_path %>
+                        <%= activeLink "<span><span>News'y</span></span>", {:controller=>"news", :action=>"index"} %>
+                        <%= activeLink "<span><span>Zawodnicy</span></span>", {:controller=>"players", :action=>"index"} %>
+                        <%= activeLink "<span><span>Terminarz</span></span>", {:controller=>"terminarzs", :action=>"index"} %>
+						<%= activeLink "<span><span>Sklep</span></span>", {:controller=>"gadgets", :action=>"index"} %>
+						</span>
                     <div class="l">
                     </div>
                     <div class="r">
