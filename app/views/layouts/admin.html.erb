@@ -45,6 +45,22 @@
                         <%= activeLink "<span><span>Terminarz</span></span>", {:controller=>"terminarzs", :action=>"index"} %>
 						<%= activeLink "<span><span>Sklep</span></span>", {:controller=>"gadgets", :action=>"index"} %>
 						</span>
+						<span class="data">
+						<script>
+						var mydate=new Date()
+						var year=mydate.getYear()
+						if (year < 1000)
+							year+=1900
+							var day=mydate.getDay()
+							var month=mydate.getMonth()
+							var daym=mydate.getDate()
+						if (daym<10)
+							daym="0"+daym
+							var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+							var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+							document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+						</script>
+						</span>
                     <div class="l">
                     </div>
                     <div class="r">

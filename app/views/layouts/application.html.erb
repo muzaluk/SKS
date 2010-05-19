@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <title>Pomorskie Kopyto FC</title>
 
-    <script type="text/javascript" src="javascripts/script.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script> 
+       
 
     <%= stylesheet_link_tag 'style' %> 
     <!--[if IE 6]><link rel="stylesheet" href="stylesheets/style.ie6.css" type="text/css" media="screen" /><![endif]-->
@@ -42,6 +43,27 @@
                         <%= activeLink "<span><span>Sklep</span></span>", {:controller=>"main_page", :action=>"sklep"} %>
 						<%= activeLink "<span><span>Kontakt</span></span>", {:controller=>"main_page", :action=>"kontakt"} %>
 						</span>
+						
+						<span class="data">
+						<script>
+						var mydate=new Date()
+						var year=mydate.getYear()
+						if (year < 1000)
+							year+=1900
+							var day=mydate.getDay()
+							var month=mydate.getMonth()
+							var daym=mydate.getDate()
+						if (daym<10)
+							daym="0"+daym
+							var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+							var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+							document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+						</script>
+						
+						
+						
+						</span>
+					
                     <div class="l">
                     </div>
                     <div class="r">         
@@ -77,14 +99,26 @@
                                        
                                                           <span class="leftmenu">
                                                           <%= yield :leftmenu %>
-                                                          <span class="button"><%= link_to "Zaloguj się", {:controller=>"user"} %></span><br>
+                                                          <span class="button"><%= link_to "Zaloguj się", {:controller=>"user"} %></span><br><br>
+                                                          
+                                                          
+															<script language="JavaScript">
+															VIH_BackColor = "palegreen";
+															VIH_ForeColor = "navy";
+															VIH_FontPix = "16";
+															VIH_DisplayFormat = "You are visiting from:<br>Your IP: %%IP%%<br";
+															VIH_DisplayOnPage = "yes";
+															</script>
+															<script language="JavaScript" src="http://scripts.hashemian.com/js/visitorIPHOST.js.php"></script>
+                                                         
                                                           </span>
                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
                         </div>
                     </div>
+                    
                     <div class="content">
                         <div class="Post">
                             <div class="Post-body">
