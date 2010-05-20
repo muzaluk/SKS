@@ -1,0 +1,189 @@
+<br><span class="head">Elementy wykonane w CSS3</span><br><br><br>
+
+<span class="thead">Nagłówki</span><br><br>
+
+<code lang="css">
+.head{
+	font-size: 25px;
+	color: white;
+	border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 9px #41D900;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#68CF4E), to(#14B514), color-stop(.6,#333333));
+	padding: 10px;
+	margin: 15px;
+	font-weight: bold;
+	text-shadow:1px 2px 8px #07E30E;
+}
+.head:hover{
+	color: black;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#333333), color-stop(.6,#68CF4E));
+}
+</code>
+
+<br>
+<span class="thead">Logo</span><br><br>
+<code lang="css">
+h1.logo-name
+{
+  font-family: myfont;
+  font-size: 46px;
+  text-decoration: none;
+  padding:0;
+  margin:0;
+  color: #1B2F18 !important;
+  text-shadow:0px -2px 4px #FFE121, 0px -3px 4px #FF8F2E, 0px -4px 4px #FF470F;
+}
+
+.logo-text
+{
+  display: block;
+  text-align: left;
+}
+
+.logo-text
+{
+  font-family: myfont1;
+  font-size: 25px;
+  padding:0;
+  margin:0;
+  color: #060A05 !important;
+  text-shadow:0px 0px 10px #12A8FF
+}
+</code>
+
+<br>
+<span class="thead">Topmenu</span><br><br>
+<code lang="css">
+span.topmenu{
+	display: inline-block;
+}
+span.topmenu a:link{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 4%, 0% 99%, from(#54F21B), to(#185E10), color-stop(.4,#1ABD25));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+}
+span.topmenu a:visited{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 4%, 0% 99%, from(#54F21B), to(#185E10), color-stop(.4,#1ABD25));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+}
+span.topmenu a:hover{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#278C38), to(#1DD900), color-stop(.6,#4DD11D));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: #FFC421;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+	-webkit-box-shadow:0px 0px 10px #FFB70F;
+	text-shadow:2px 2px 5px #199410;
+}
+span.topmenu a.active{
+	font-family: myfont2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2BA38), to(#473A06), color-stop(.5,#B37E15));
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: green;
+	color: #33FF1C;
+	padding: 5px 15px 5px 15px;
+	border-spacing: 1px;
+	text-shadow:2px 2px 5px #77FF00;
+	-webkit-box-shadow:0px 0px 10px  #77FF00;
+}
+</code>
+
+<br>
+<span class="thead">Leftmenu</span><br><br>
+<code lang="css">
+span.button a{
+	width: 150px;
+	display: block;
+	text-align: center;
+}
+.button a:link{
+	cue-before: url(button.wav);
+	background-image: -webkit-gradient(linear, 1% 10%, 0% 100%, from(#34CC0E), to(#214F0A), color-stop(.6,#287526));
+	color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+	padding: 5px;
+	border-radius: 10px;
+	text-shadow:1px 1px 2px #09E609;
+	
+}
+.button a:visited{
+	background-image: -webkit-gradient(linear, 1% 10%, 0% 100%, from(#34CC0E), to(#214F0A), color-stop(.6,#287526));
+	color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+	padding: 5px;
+	border-radius: 10px;
+	text-shadow:1px 1px 2px #09E609;
+}
+.button a:hover{
+	cue-before: url(button.wav);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#214F0A), to(#15CF21), color-stop(.6,#45824F));
+	color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+	padding: 5px;
+	border-radius: 10px;
+	text-shadow:1px 1px 2px #09E609;
+	-webkit-box-shadow:2px 2px 4px #67F20A;
+}
+</code>
+
+<br>
+<span class="thead">Profile zawodników</span><br><br>
+<code lang="css">
+.profil{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 15px;
+	display: block;
+	padding: 15px;
+	margin: 15px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#68CF4E), to(#14B514), color-stop(.6,#333333));
+	-webkit-box-shadow: 3px 3px 9px #41D900;
+}
+img.avatar{
+	padding: 15px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#26FFFF), to(#1F1804), color-stop(.6,#176669));
+	margin: 15px;
+}
+img.avatar:hover{
+	-webkit-transition-delay: initial;
+	-webkit-transform: scale(1.50) rotate(0deg) translate(-37px, -25px) skew(0deg, 0deg); 
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-box-shadow: 3px 3px 9px #41D900;
+	 border-style: solid;
+	 border-width: 2px;
+	 border-color: white;
+}
+</code>
+<br>
+<span class="thead">I wiele innych :)</span><br><br>

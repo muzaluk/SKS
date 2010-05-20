@@ -26,5 +26,14 @@ class MainPageController < ApplicationController
   def gadzety
 	@gadgets = Gadget.all
   end
+  
+  def css
+  end
+
+  def html
+  end
+
+  def js
+  end
 
 end

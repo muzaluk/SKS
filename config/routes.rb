@@ -67,4 +67,7 @@ ActionController::Routing::Routes.draw do |map|
   map.gadgets_all '/gadgets', :controller => 'gadgets', :action => 'index'
   map.gadgets_new '/add_gadget', :controller => 'gadgets', :action => 'new'
   map.gadgets_show '/show_gadgets', :controller => 'main_page', :action => 'gadzety'
+  map.css_source '/css_source', :controller => 'main_page', :action => 'css'
+  map.html_source '/html_source', :controller => 'main_page', :action => 'html'
+  map.js_source '/js_source', :controller => 'main_page', :action => 'js'
 end
