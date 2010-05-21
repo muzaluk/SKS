@@ -35,5 +35,5 @@ class MainPageController < ApplicationController
 
   def js
   end
-
+  
 end

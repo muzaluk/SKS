@@ -1,18 +1,141 @@
 <span class="head">Elementy wykonane w JavaScript</span><br><br>
 <br>
-<span class="thead">Wyświetlanie daty</span><br><br>
+<span class="thead">Wyświetlanie daty i godziny</span><br><br>
 <code lang="javascript">
 
-var mydate=new Date()
-var year=mydate.getYear()
-if (year < 1000)
-	year+=1900
-	var day=mydate.getDay()
-	var month=mydate.getMonth()
-	var daym=mydate.getDate()
-if (daym<10)
-	daym="0"+daym
-	var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
-	var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-	document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+// geben Sie bitte hier das Unterverzeichniss an, dass Ihre Bilder enthält
+//  "" bedeitet die Bilder sind im selben Verzeichniss wie das Script
+var image_dir = "/images/";
+
+// Wie oft soll die Uhr erneuert werden? In Sekunden.
+var speed = 1;
+
+// ********** Hier bitte nichts verändern ************
+
+// preload Nummer der Bilder
+img0 = new Image(); img0.src = image_dir+"0.gif";
+img1 = new Image(); img1.src = image_dir+"1.gif";
+img2 = new Image(); img2.src = image_dir+"2.gif";
+img3 = new Image(); img3.src = image_dir+"3.gif";
+img4 = new Image(); img4.src = image_dir+"4.gif";
+img5 = new Image(); img5.src = image_dir+"5.gif";
+img6 = new Image(); img6.src = image_dir+"6.gif";
+img7 = new Image(); img7.src = image_dir+"7.gif";
+img8 = new Image(); img8.src = image_dir+"8.gif";
+img9 = new Image(); img9.src = image_dir+"9.gif";
+
+// ausbesserung eines Netscape 2 und 3 bugs
+function getFullYear(d) { // d is a date object
+	yr = d.getYear();
+	if (yr < 1000)
+	yr+=1900;
+	return yr;
+}
+function calcDate() {
+	now = new Date();
+	d = now.getDay();
+	document.dayofweek.src = image_dir+"d" + d + ".gif";
+	m = now.getMonth();
+	document.month.src = image_dir+"m" + m + ".gif";
+	dd = now.getDate();
+	dd = (dd >= 10 ? "":"0") + dd;
+	document.date1.src = image_dir + dd.substring(0,1) + ".gif";
+	document.date2.src = image_dir + dd.substring(1,2) + ".gif";
+	y = "" + getFullYear(now);
+	document.year1.src = image_dir + y.substring(0,1) + ".gif";
+	document.year2.src = image_dir + y.substring(1,2) + ".gif";
+	document.year3.src = image_dir + y.substring(2,3) + ".gif";
+	document.year4.src = image_dir + y.substring(3,4) + ".gif";
+	calcAmPm();
+}
+
+function calcAmPm(){
+	ampm = new Date();
+	ap = ampm.getHours();
+	if (ap < 12) {
+		document.morn.src = image_dir + "am.gif";
+	} 
+	else {
+		document.morn.src = image_dir + "pm.gif";
+	}
+	calcTime();
+}
+
+speed *= 1000; // die Zeit wird in Millisekunden nicht Sekunden gehalten
+
+function calcTime() {
+	now = new Date();
+	h = now.getHours();
+	if (h > 12)
+		h = h - 12;
+		h = (h<10?"0":"") + h;
+		document.hour1.src = image_dir + h.substring(0,1) + ".gif";
+		document.hour2.src = image_dir + h.substring(1,2) + ".gif";
+		m = now.getMinutes();
+		m = (m<10?"0":"") + m;
+		document.min1.src = image_dir + m.substring(0,1) + ".gif";
+		document.min2.src = image_dir + m.substring(1,2) + ".gif";
+		se = now.getSeconds();
+		se = (se<10?"0":"") + se;
+		document.sec1.src = image_dir + se.substring(0,1) + ".gif";
+		document.sec2.src = image_dir + se.substring(1,2) + ".gif";
+	if ((h < 1) && (m < 1) && (se < 1))
+		calcDate();
+	if ((h == 12) && (m < 1) && (se < 1))
+		calcAmPm();
+		setTimeout("calcTime()",speed);
+}
+
+document.write('<img name="dayofweek" src="'+image_dir+'space.gif" height=11 width=35 >'
++'<img src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="month" src="'+image_dir+'space.gif" height=11 width=29><img src="'
++image_dir+'space.gif" width=9 height=11><img name="date1" '
++'src="'+image_dir+'space.gif" width=9 height=11 ><img name="date2" src="'+image_dir+'space.gif" width=9 '
++'height=11><img name="comma" src="'+image_dir+'cc.gif" border=0 width=4 '
++'height=11><img src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="year1" src="'+image_dir+'space.gif" width=9 height=11><img name="year2" src="" '
++'width=9 height=11><img name="year3" src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="year4" src="'+image_dir+'space.gif" width=9 height=11><img src="'+image_dir
++'space.gif" width=9 height=11><img src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="hour1" src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="hour2" src="'+image_dir+'space.gif" width=9 height=11><img name="colon" src="'
++image_dir+'c.gif" border=0 width=4 height=11><img name="min1" src="'+image_dir+'space.gif" '
++'width=9 height=11><img name="min2" src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="colon" src="'+image_dir+'c.gif" width=4 height=11>'
++'<img name="sec1" src="'+image_dir+'space.gif" width=9 height=11><img name="sec2" src="" '
++'width=9 height=11><img src="'+image_dir+'space.gif" width=9 height=11>'
++'<img name="morn" src="'+image_dir+'space.gif" width=20 height=11>');
+calcDate();
+</code>
+<br>
+<span class="thead">Wyświetlanie adresu IP</span><br><br>
+<code lang="javascript">
+VIH_BackColor = "palegreen";
+VIH_ForeColor = "navy";
+VIH_FontPix = "16";
+VIH_DisplayFormat = "You are visiting from:<br>IP Address: %%IP%%<br>Host: %%HOST%%";
+VIH_DisplayOnPage = "yes";
+</script>
+<script language="JavaScript" src="http://www.hashemian.com/js/visitorIP.js.php"></script>
+*/
+
+if (typeof(VIH_BackColor)=="undefined")
+  VIH_BackColor = "white";
+if (typeof(VIH_ForeColor)=="undefined")
+  VIH_ForeColor= "black";
+if (typeof(VIH_FontPix)=="undefined")
+  VIH_FontPix = "16";
+if (typeof(VIH_DisplayFormat)=="undefined")
+  VIH_DisplayFormat = "You are visiting from:<br>IP Address: %%IP%%<br>Host: %%HOST%%";
+if (typeof(VIH_DisplayOnPage)=="undefined" || VIH_DisplayOnPage.toString().toLowerCase()!="no")
+  VIH_DisplayOnPage = "yes";
+
+VIH_HostIP = "213.199.199.102";
+VIH_HostName = "213.199.199.102";
+
+if (VIH_DisplayOnPage=="yes") {
+  VIH_DisplayFormat = VIH_DisplayFormat.replace(/%%IP%%/g, VIH_HostIP);
+  VIH_DisplayFormat = VIH_DisplayFormat.replace(/%%HOST%%/g, VIH_HostName);
+  document.write("<table border='0' cellspacing='0' cellpadding='1' style='background-color:" + VIH_BackColor + "; color:" + VIH_ForeColor + "; font-size:" + VIH_FontPix + "px'><tr><td>" + VIH_DisplayFormat + "</td></tr></table>");
+}
 </code>
