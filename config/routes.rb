@@ -47,7 +47,7 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  map.root :controller => "MainPage"
+  map.root :controller => "main_page"
   map.wszystkie '/showall', :controller => 'terminarzs', :action => 'index'
   map.edytuj '/edit', :controller => 'terminarzs', :action => 'edit'
   map.dodaj '/add_term', :controller => 'terminarzs', :action => 'new'
